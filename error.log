@@ -1,0 +1,7 @@
+[Sun Jul 31 06:26:12.833309 2016] [mpm_prefork:notice] [pid 27282] AH00163: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
+[Sun Jul 31 06:26:12.833323 2016] [core:notice] [pid 27282] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Jul 31 21:21:01.074807 2016] [:error] [pid 14928] [client 179.99.200.39:33764] script '/var/www/html/ip_json.php' not found or unable to stat
+[Mon Aug 01 07:13:43.375137 2016] [:error] [pid 17014] [client 189.219.25.97:44027] script '/var/www/html/command.php' not found or unable to stat
+[Mon Aug 01 13:12:09.997728 2016] [core:error] [pid 14927] [client 169.229.3.91:53843] AH00126: Invalid URI in request u\xef\xdc\xb7\x1d\xdc\xae8\xd6\x81\r\xec\x8a\x10#H\xc4\x15e
+[Mon Aug 01 19:59:37.858611 2016] [:error] [pid 14929] [client 216.9.110.12:3898] PHP Notice:  Undefined index: columns in /var/www/html/query/export.php on line 5
+[Mon Aug 01 20:00:21.692394 2016] [:error] [pid 14926] [client 216.9.110.12:39491] PHP Notice:  Undefined index: columns in /var/www/html/query/export.php on line 5
