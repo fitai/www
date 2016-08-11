@@ -1,7 +1,220 @@
-[Sun Jul 31 06:26:12.833309 2016] [mpm_prefork:notice] [pid 27282] AH00163: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
-[Sun Jul 31 06:26:12.833323 2016] [core:notice] [pid 27282] AH00094: Command line: '/usr/sbin/apache2'
-[Sun Jul 31 21:21:01.074807 2016] [:error] [pid 14928] [client 179.99.200.39:33764] script '/var/www/html/ip_json.php' not found or unable to stat
-[Mon Aug 01 07:13:43.375137 2016] [:error] [pid 17014] [client 189.219.25.97:44027] script '/var/www/html/command.php' not found or unable to stat
-[Mon Aug 01 13:12:09.997728 2016] [core:error] [pid 14927] [client 169.229.3.91:53843] AH00126: Invalid URI in request u\xef\xdc\xb7\x1d\xdc\xae8\xd6\x81\r\xec\x8a\x10#H\xc4\x15e
-[Mon Aug 01 19:59:37.858611 2016] [:error] [pid 14929] [client 216.9.110.12:3898] PHP Notice:  Undefined index: columns in /var/www/html/query/export.php on line 5
-[Mon Aug 01 20:00:21.692394 2016] [:error] [pid 14926] [client 216.9.110.12:39491] PHP Notice:  Undefined index: columns in /var/www/html/query/export.php on line 5
+[Sun Aug 07 06:35:27.026873 2016] [mpm_prefork:notice] [pid 27282] AH00163: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
+[Sun Aug 07 06:35:27.026892 2016] [core:notice] [pid 27282] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Aug 09 17:14:31.203326 2016] [:error] [pid 1716] [client 201.173.82.19:53382] script '/var/www/html/command.php' not found or unable to stat
+[Tue Aug 09 18:05:34.514967 2016] [:error] [pid 1713] [client 71.119.185.97:62273] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 18:05:34.750670 2016] [:error] [pid 1713] [client 71.119.185.97:62273] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 18:05:34.750694 2016] [:error] [pid 1713] [client 71.119.185.97:62273] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 18:05:34.750698 2016] [:error] [pid 1713] [client 71.119.185.97:62273] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Tue Aug 09 18:11:04.952118 2016] [:error] [pid 1715] [client 71.119.185.97:62412] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 18:11:04.988420 2016] [:error] [pid 1715] [client 71.119.185.97:62412] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 18:11:04.988442 2016] [:error] [pid 1715] [client 71.119.185.97:62412] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 18:11:04.988446 2016] [:error] [pid 1715] [client 71.119.185.97:62412] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Tue Aug 09 18:11:08.167244 2016] [:error] [pid 1715] [client 71.119.185.97:62412] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 18:11:08.179100 2016] [:error] [pid 1715] [client 71.119.185.97:62412] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 18:11:08.179113 2016] [:error] [pid 1715] [client 71.119.185.97:62412] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 18:11:08.179117 2016] [:error] [pid 1715] [client 71.119.185.97:62412] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Tue Aug 09 23:24:39.792858 2016] [:error] [pid 14996] [client 71.119.185.97:52763] script '/var/www/html/json.php' not found or unable to stat
+[Tue Aug 09 23:24:43.610135 2016] [:error] [pid 14996] [client 71.119.185.97:52763] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 23:24:43.681012 2016] [:error] [pid 14996] [client 71.119.185.97:52763] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 23:24:43.681032 2016] [:error] [pid 14996] [client 71.119.185.97:52763] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 23:24:43.681036 2016] [:error] [pid 14996] [client 71.119.185.97:52763] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Tue Aug 09 23:24:43.691267 2016] [:error] [pid 7488] [client 71.119.185.97:52764] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 23:24:43.703448 2016] [:error] [pid 7488] [client 71.119.185.97:52764] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 23:24:43.703459 2016] [:error] [pid 7488] [client 71.119.185.97:52764] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 23:24:43.703472 2016] [:error] [pid 7488] [client 71.119.185.97:52764] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Tue Aug 09 23:26:21.916141 2016] [:error] [pid 1712] [client 71.119.185.97:52781] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 23:26:21.928249 2016] [:error] [pid 1712] [client 71.119.185.97:52781] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 23:26:21.928260 2016] [:error] [pid 1712] [client 71.119.185.97:52781] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 23:26:21.928263 2016] [:error] [pid 1712] [client 71.119.185.97:52781] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Tue Aug 09 23:28:29.433255 2016] [:error] [pid 1714] [client 71.119.185.97:52881] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 23:28:29.445093 2016] [:error] [pid 1714] [client 71.119.185.97:52881] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 23:28:29.445107 2016] [:error] [pid 1714] [client 71.119.185.97:52881] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 23:28:29.445111 2016] [:error] [pid 1714] [client 71.119.185.97:52881] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Tue Aug 09 23:31:08.338071 2016] [:error] [pid 1715] [client 71.119.185.97:52977] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 23:31:08.350461 2016] [:error] [pid 1715] [client 71.119.185.97:52977] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 23:31:08.350472 2016] [:error] [pid 1715] [client 71.119.185.97:52977] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 23:31:08.350476 2016] [:error] [pid 1715] [client 71.119.185.97:52977] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Tue Aug 09 23:31:10.126562 2016] [:error] [pid 1715] [client 71.119.185.97:52977] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 23:31:10.139224 2016] [:error] [pid 1715] [client 71.119.185.97:52977] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 23:31:10.139236 2016] [:error] [pid 1715] [client 71.119.185.97:52977] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 23:31:10.139239 2016] [:error] [pid 1715] [client 71.119.185.97:52977] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Tue Aug 09 23:33:36.080431 2016] [:error] [pid 1716] [client 71.119.185.97:53055] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 23:33:36.093135 2016] [:error] [pid 1716] [client 71.119.185.97:53055] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 23:33:36.093146 2016] [:error] [pid 1716] [client 71.119.185.97:53055] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 23:33:36.093158 2016] [:error] [pid 1716] [client 71.119.185.97:53055] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Tue Aug 09 23:35:13.549738 2016] [:error] [pid 3991] [client 71.119.185.97:53078] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 23:35:13.562176 2016] [:error] [pid 3991] [client 71.119.185.97:53078] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 23:35:13.562193 2016] [:error] [pid 3991] [client 71.119.185.97:53078] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 23:35:13.562197 2016] [:error] [pid 3991] [client 71.119.185.97:53078] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Tue Aug 09 23:35:13.562202 2016] [:error] [pid 3991] [client 71.119.185.97:53078] PHP Notice:  Array to string conversion in /var/www/html/query/json.php on line 53
+[Tue Aug 09 23:35:28.115283 2016] [:error] [pid 1713] [client 71.119.185.97:53086] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Tue Aug 09 23:35:28.126998 2016] [:error] [pid 1713] [client 71.119.185.97:53086] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 35
+[Tue Aug 09 23:35:28.127009 2016] [:error] [pid 1713] [client 71.119.185.97:53086] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 36
+[Tue Aug 09 23:35:28.127012 2016] [:error] [pid 1713] [client 71.119.185.97:53086] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 37
+[Wed Aug 10 15:47:24.123611 2016] [:error] [pid 3991] [client 71.119.185.97:52102] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 15:47:24.230671 2016] [:error] [pid 3991] [client 71.119.185.97:52102] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 36
+[Wed Aug 10 15:47:24.230696 2016] [:error] [pid 3991] [client 71.119.185.97:52102] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 37
+[Wed Aug 10 15:47:24.230700 2016] [:error] [pid 3991] [client 71.119.185.97:52102] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 38
+[Wed Aug 10 15:48:25.463417 2016] [:error] [pid 1712] [client 71.119.185.97:52124] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 15:48:25.480227 2016] [:error] [pid 1712] [client 71.119.185.97:52124] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 36
+[Wed Aug 10 15:48:25.480237 2016] [:error] [pid 1712] [client 71.119.185.97:52124] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 37
+[Wed Aug 10 15:48:25.480240 2016] [:error] [pid 1712] [client 71.119.185.97:52124] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 38
+[Wed Aug 10 15:48:58.918656 2016] [:error] [pid 1716] [client 71.119.185.97:52129] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 15:48:58.933269 2016] [:error] [pid 1716] [client 71.119.185.97:52129] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 36
+[Wed Aug 10 15:48:58.933280 2016] [:error] [pid 1716] [client 71.119.185.97:52129] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 37
+[Wed Aug 10 15:48:58.933304 2016] [:error] [pid 1716] [client 71.119.185.97:52129] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 38
+[Wed Aug 10 15:51:21.741553 2016] [:error] [pid 14996] [client 71.119.185.97:52157] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 15:51:21.756700 2016] [:error] [pid 14996] [client 71.119.185.97:52157] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 36
+[Wed Aug 10 15:51:21.756721 2016] [:error] [pid 14996] [client 71.119.185.97:52157] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 37
+[Wed Aug 10 15:51:21.756724 2016] [:error] [pid 14996] [client 71.119.185.97:52157] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 38
+[Wed Aug 10 16:21:18.399298 2016] [:error] [pid 1714] [client 71.119.185.97:53263] PHP Warning:  PDO::query() expects parameter 1 to be string, object given in /var/www/html/registration.php on line 28, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/registration.php
+[Wed Aug 10 16:40:06.140619 2016] [:error] [pid 1714] [client 71.119.185.97:53777] PHP Warning:  PDO::query() expects parameter 1 to be string, object given in /var/www/html/login.php on line 26, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/login.php
+[Wed Aug 10 16:56:08.637099 2016] [:error] [pid 1714] [client 71.119.185.97:54211] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 16:56:08.640458 2016] [:error] [pid 1714] [client 71.119.185.97:54211] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 43
+[Wed Aug 10 16:56:08.640480 2016] [:error] [pid 1714] [client 71.119.185.97:54211] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 44
+[Wed Aug 10 16:56:08.640487 2016] [:error] [pid 1714] [client 71.119.185.97:54211] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 45
+[Wed Aug 10 16:58:47.929467 2016] [:error] [pid 7488] [client 71.119.185.97:54273] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 16:58:47.932360 2016] [:error] [pid 7488] [client 71.119.185.97:54273] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 43
+[Wed Aug 10 16:58:47.932371 2016] [:error] [pid 7488] [client 71.119.185.97:54273] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 44
+[Wed Aug 10 16:58:47.932375 2016] [:error] [pid 7488] [client 71.119.185.97:54273] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 45
+[Wed Aug 10 16:58:49.199987 2016] [:error] [pid 7488] [client 71.119.185.97:54273] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 16:58:49.202539 2016] [:error] [pid 7488] [client 71.119.185.97:54273] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 43
+[Wed Aug 10 16:58:49.202549 2016] [:error] [pid 7488] [client 71.119.185.97:54273] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 44
+[Wed Aug 10 16:58:49.202553 2016] [:error] [pid 7488] [client 71.119.185.97:54273] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 45
+[Wed Aug 10 17:49:11.952599 2016] [:error] [pid 1713] [client 71.119.185.97:55517] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 17:49:11.968421 2016] [:error] [pid 1713] [client 71.119.185.97:55517] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 37
+[Wed Aug 10 17:49:11.968444 2016] [:error] [pid 1713] [client 71.119.185.97:55517] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 38
+[Wed Aug 10 17:49:11.968448 2016] [:error] [pid 1713] [client 71.119.185.97:55517] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 39
+[Wed Aug 10 17:49:33.662445 2016] [:error] [pid 1712] [client 71.119.185.97:55519] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 17:49:33.676797 2016] [:error] [pid 1712] [client 71.119.185.97:55519] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 37
+[Wed Aug 10 17:49:33.676807 2016] [:error] [pid 1712] [client 71.119.185.97:55519] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 38
+[Wed Aug 10 17:49:33.676810 2016] [:error] [pid 1712] [client 71.119.185.97:55519] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 39
+[Wed Aug 10 17:50:19.591127 2016] [:error] [pid 1714] [client 71.119.185.97:55529] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 17:50:19.601845 2016] [:error] [pid 1714] [client 71.119.185.97:55529] PHP Notice:  Undefined offset: 0 in /var/www/html/query/json.php on line 28
+[Wed Aug 10 17:50:19.603482 2016] [:error] [pid 1714] [client 71.119.185.97:55529] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 39
+[Wed Aug 10 17:50:19.603492 2016] [:error] [pid 1714] [client 71.119.185.97:55529] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 40
+[Wed Aug 10 17:50:19.603495 2016] [:error] [pid 1714] [client 71.119.185.97:55529] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 41
+[Wed Aug 10 17:50:33.363499 2016] [:error] [pid 1715] [client 71.119.185.97:55531] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 17:50:33.377595 2016] [:error] [pid 1715] [client 71.119.185.97:55531] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 39
+[Wed Aug 10 17:50:33.377619 2016] [:error] [pid 1715] [client 71.119.185.97:55531] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 40
+[Wed Aug 10 17:50:33.377626 2016] [:error] [pid 1715] [client 71.119.185.97:55531] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 41
+[Wed Aug 10 17:52:07.670702 2016] [:error] [pid 1716] [client 71.119.185.97:55557] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /var/www/html/query/json.php on line 28
+[Wed Aug 10 17:52:20.450974 2016] [:error] [pid 7488] [client 71.119.185.97:55558] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 17:52:20.460763 2016] [:error] [pid 7488] [client 71.119.185.97:55558] PHP Warning:  preg_replace(): No ending matching delimiter '}' found in /var/www/html/query/json.php on line 28
+[Wed Aug 10 17:52:20.462251 2016] [:error] [pid 7488] [client 71.119.185.97:55558] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 40
+[Wed Aug 10 17:52:20.462260 2016] [:error] [pid 7488] [client 71.119.185.97:55558] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 41
+[Wed Aug 10 17:52:20.462274 2016] [:error] [pid 7488] [client 71.119.185.97:55558] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 42
+[Wed Aug 10 17:53:31.207686 2016] [:error] [pid 3991] [client 71.119.185.97:55570] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 17:53:31.218005 2016] [:error] [pid 3991] [client 71.119.185.97:55570] PHP Warning:  preg_replace(): No ending matching delimiter '}' found in /var/www/html/query/json.php on line 29
+[Wed Aug 10 17:53:31.219658 2016] [:error] [pid 3991] [client 71.119.185.97:55570] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 41
+[Wed Aug 10 17:53:31.219666 2016] [:error] [pid 3991] [client 71.119.185.97:55570] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 42
+[Wed Aug 10 17:53:31.219669 2016] [:error] [pid 3991] [client 71.119.185.97:55570] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 43
+[Wed Aug 10 17:53:44.110442 2016] [:error] [pid 14996] [client 71.119.185.97:55571] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 17:53:44.123655 2016] [:error] [pid 14996] [client 71.119.185.97:55571] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 40
+[Wed Aug 10 17:53:44.123667 2016] [:error] [pid 14996] [client 71.119.185.97:55571] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 41
+[Wed Aug 10 17:53:44.123670 2016] [:error] [pid 14996] [client 71.119.185.97:55571] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 42
+[Wed Aug 10 17:54:09.434166 2016] [:error] [pid 1713] [client 71.119.185.97:55590] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 17:54:09.448246 2016] [:error] [pid 1713] [client 71.119.185.97:55590] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 40
+[Wed Aug 10 17:54:09.448259 2016] [:error] [pid 1713] [client 71.119.185.97:55590] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 41
+[Wed Aug 10 17:54:09.448263 2016] [:error] [pid 1713] [client 71.119.185.97:55590] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 42
+[Wed Aug 10 17:54:35.334473 2016] [:error] [pid 1712] [client 71.119.185.97:55593] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 17:54:35.346979 2016] [:error] [pid 1712] [client 71.119.185.97:55593] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 40
+[Wed Aug 10 17:54:35.346997 2016] [:error] [pid 1712] [client 71.119.185.97:55593] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 41
+[Wed Aug 10 17:54:35.347000 2016] [:error] [pid 1712] [client 71.119.185.97:55593] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 42
+[Wed Aug 10 17:56:43.099906 2016] [:error] [pid 1714] [client 71.119.185.97:55613] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 17:56:43.115838 2016] [:error] [pid 1714] [client 71.119.185.97:55613] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 46
+[Wed Aug 10 17:56:43.115852 2016] [:error] [pid 1714] [client 71.119.185.97:55613] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 17:56:43.115866 2016] [:error] [pid 1714] [client 71.119.185.97:55613] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 17:57:02.430309 2016] [:error] [pid 1715] [client 71.119.185.97:55617] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 17:57:02.445903 2016] [:error] [pid 1715] [client 71.119.185.97:55617] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 17:57:02.445914 2016] [:error] [pid 1715] [client 71.119.185.97:55617] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 17:57:02.445918 2016] [:error] [pid 1715] [client 71.119.185.97:55617] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:06:36.618832 2016] [:error] [pid 1716] [client 71.119.185.97:55829] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:06:36.621647 2016] [:error] [pid 1716] [client 71.119.185.97:55829] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 54
+[Wed Aug 10 18:06:36.621657 2016] [:error] [pid 1716] [client 71.119.185.97:55829] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 55
+[Wed Aug 10 18:06:36.621660 2016] [:error] [pid 1716] [client 71.119.185.97:55829] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 56
+[Wed Aug 10 18:07:17.429721 2016] [:error] [pid 7488] [client 71.119.185.97:55830] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:07:17.440204 2016] [:error] [pid 7488] [client 71.119.185.97:55830] PHP Notice:  Undefined variable: contentArray in /var/www/html/query/json.php on line 38
+[Wed Aug 10 18:07:17.441871 2016] [:error] [pid 7488] [client 71.119.185.97:55830] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:07:17.441880 2016] [:error] [pid 7488] [client 71.119.185.97:55830] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:07:17.441884 2016] [:error] [pid 7488] [client 71.119.185.97:55830] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:07:45.284288 2016] [:error] [pid 14996] [client 71.119.185.97:55840] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:07:45.286925 2016] [:error] [pid 14996] [client 71.119.185.97:55840] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 54
+[Wed Aug 10 18:07:45.286935 2016] [:error] [pid 14996] [client 71.119.185.97:55840] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 55
+[Wed Aug 10 18:07:45.286939 2016] [:error] [pid 14996] [client 71.119.185.97:55840] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 56
+[Wed Aug 10 18:09:01.256267 2016] [:error] [pid 1713] [client 71.119.185.97:55851] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:09:01.270933 2016] [:error] [pid 1713] [client 71.119.185.97:55851] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:09:01.270944 2016] [:error] [pid 1713] [client 71.119.185.97:55851] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:09:01.270957 2016] [:error] [pid 1713] [client 71.119.185.97:55851] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:12:21.838464 2016] [:error] [pid 1712] [client 71.119.185.97:55878] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:12:21.853058 2016] [:error] [pid 1712] [client 71.119.185.97:55878] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:12:21.853068 2016] [:error] [pid 1712] [client 71.119.185.97:55878] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:12:21.853072 2016] [:error] [pid 1712] [client 71.119.185.97:55878] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:13:37.791315 2016] [:error] [pid 1714] [client 71.119.185.97:55887] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:13:37.802846 2016] [:error] [pid 1714] [client 71.119.185.97:55887] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:13:37.802858 2016] [:error] [pid 1714] [client 71.119.185.97:55887] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:13:37.802862 2016] [:error] [pid 1714] [client 71.119.185.97:55887] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:13:54.583294 2016] [:error] [pid 1715] [client 71.119.185.97:55896] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:13:54.595156 2016] [:error] [pid 1715] [client 71.119.185.97:55896] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:13:54.595182 2016] [:error] [pid 1715] [client 71.119.185.97:55896] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:13:54.595185 2016] [:error] [pid 1715] [client 71.119.185.97:55896] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:20:07.877176 2016] [:error] [pid 1716] [client 71.119.185.97:56020] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:20:07.890350 2016] [:error] [pid 1716] [client 71.119.185.97:56020] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:20:07.890372 2016] [:error] [pid 1716] [client 71.119.185.97:56020] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:20:07.890376 2016] [:error] [pid 1716] [client 71.119.185.97:56020] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:21:16.236644 2016] [:error] [pid 7488] [client 71.119.185.97:56032] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:21:16.248129 2016] [:error] [pid 7488] [client 71.119.185.97:56032] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:21:16.248140 2016] [:error] [pid 7488] [client 71.119.185.97:56032] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:21:16.248150 2016] [:error] [pid 7488] [client 71.119.185.97:56032] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:30:51.269983 2016] [:error] [pid 14996] [client 71.119.185.97:56204] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:30:51.281754 2016] [:error] [pid 14996] [client 71.119.185.97:56204] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:30:51.281771 2016] [:error] [pid 14996] [client 71.119.185.97:56204] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:30:51.281774 2016] [:error] [pid 14996] [client 71.119.185.97:56204] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:32:16.313510 2016] [:error] [pid 1712] [client 71.119.185.97:56242] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:32:16.324130 2016] [:error] [pid 1712] [client 71.119.185.97:56242] PHP Notice:  Undefined variable: array in /var/www/html/query/json.php on line 34
+[Wed Aug 10 18:32:16.324168 2016] [:error] [pid 1712] [client 71.119.185.97:56242] PHP Fatal error:  Uncaught Error: Function name must be a string in /var/www/html/query/json.php:34\nStack trace:\n#0 {main}\n  thrown in /var/www/html/query/json.php on line 34
+[Wed Aug 10 18:32:28.944765 2016] [:error] [pid 1715] [client 71.119.185.97:56252] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:32:28.954576 2016] [:error] [pid 1715] [client 71.119.185.97:56252] PHP Notice:  Use of undefined constant axData - assumed 'axData' in /var/www/html/query/json.php on line 34
+[Wed Aug 10 18:32:28.956077 2016] [:error] [pid 1715] [client 71.119.185.97:56252] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:32:28.956086 2016] [:error] [pid 1715] [client 71.119.185.97:56252] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:32:28.956089 2016] [:error] [pid 1715] [client 71.119.185.97:56252] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:33:08.066194 2016] [:error] [pid 7488] [client 71.119.185.97:56258] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:33:08.078271 2016] [:error] [pid 7488] [client 71.119.185.97:56258] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:33:08.078283 2016] [:error] [pid 7488] [client 71.119.185.97:56258] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:33:08.078286 2016] [:error] [pid 7488] [client 71.119.185.97:56258] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:33:26.838229 2016] [:error] [pid 14996] [client 71.119.185.97:56269] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:33:26.850735 2016] [:error] [pid 14996] [client 71.119.185.97:56269] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:33:26.850747 2016] [:error] [pid 14996] [client 71.119.185.97:56269] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:33:26.850751 2016] [:error] [pid 14996] [client 71.119.185.97:56269] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:34:53.300539 2016] [:error] [pid 1712] [client 71.119.185.97:56286] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:34:53.311703 2016] [:error] [pid 1712] [client 71.119.185.97:56286] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:34:53.311721 2016] [:error] [pid 1712] [client 71.119.185.97:56286] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:34:53.311725 2016] [:error] [pid 1712] [client 71.119.185.97:56286] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:36:33.081543 2016] [:error] [pid 1715] [client 71.119.185.97:56322] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:36:33.093080 2016] [:error] [pid 1715] [client 71.119.185.97:56322] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:36:33.093097 2016] [:error] [pid 1715] [client 71.119.185.97:56322] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:36:33.093112 2016] [:error] [pid 1715] [client 71.119.185.97:56322] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:36:47.990584 2016] [:error] [pid 7488] [client 71.119.185.97:56331] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:36:48.003032 2016] [:error] [pid 7488] [client 71.119.185.97:56331] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:36:48.003050 2016] [:error] [pid 7488] [client 71.119.185.97:56331] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:36:48.003054 2016] [:error] [pid 7488] [client 71.119.185.97:56331] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:40:58.107866 2016] [:error] [pid 14996] [client 54.89.92.4:22570] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:40:58.119653 2016] [:error] [pid 14996] [client 54.89.92.4:22570] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:40:58.119665 2016] [:error] [pid 14996] [client 54.89.92.4:22570] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:40:58.119669 2016] [:error] [pid 14996] [client 54.89.92.4:22570] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:40:58.144209 2016] [:error] [pid 1713] [client 54.165.241.61:28525] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:40:58.156073 2016] [:error] [pid 1713] [client 54.165.241.61:28525] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:40:58.156095 2016] [:error] [pid 1713] [client 54.165.241.61:28525] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:40:58.156103 2016] [:error] [pid 1713] [client 54.165.241.61:28525] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:41:04.686574 2016] [:error] [pid 1712] [client 72.227.147.224:57886] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:41:04.697988 2016] [:error] [pid 1712] [client 72.227.147.224:57886] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:41:04.698002 2016] [:error] [pid 1712] [client 72.227.147.224:57886] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:41:04.698006 2016] [:error] [pid 1712] [client 72.227.147.224:57886] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 18:41:47.407720 2016] [:error] [pid 1714] [client 71.119.185.97:56406] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 18:41:47.419781 2016] [:error] [pid 1714] [client 71.119.185.97:56406] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 18:41:47.419803 2016] [:error] [pid 1714] [client 71.119.185.97:56406] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 18:41:47.419811 2016] [:error] [pid 1714] [client 71.119.185.97:56406] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49
+[Wed Aug 10 20:00:04.690252 2016] [:error] [pid 1716] [client 71.119.185.97:57127] PHP Notice:  Undefined index: liftid in /var/www/html/query/json.php on line 4
+[Wed Aug 10 20:00:04.764406 2016] [:error] [pid 1716] [client 71.119.185.97:57127] PHP Notice:  Use of undefined constant lift_sampling_rate - assumed 'lift_sampling_rate' in /var/www/html/query/json.php on line 47
+[Wed Aug 10 20:00:04.764434 2016] [:error] [pid 1716] [client 71.119.185.97:57127] PHP Notice:  Use of undefined constant lift_weight - assumed 'lift_weight' in /var/www/html/query/json.php on line 48
+[Wed Aug 10 20:00:04.764438 2016] [:error] [pid 1716] [client 71.119.185.97:57127] PHP Notice:  Use of undefined constant lift_weight_units - assumed 'lift_weight_units' in /var/www/html/query/json.php on line 49

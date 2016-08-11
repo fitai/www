@@ -20,17 +20,23 @@ Website: https://htmlcssphptutorial.wordpress.com
         $username = $_POST['username'];
         $password = $_POST['password'];
 		$username = stripslashes($username);
-		$password = stripslashes($password);
+		$password = md5(stripslashes($password));
 	//Checking is user existing in the database or not
-        $query = $myPDO->prepare("SELECT * FROM `users` WHERE username='$username' and password='".md5($password)."'");
-		$result = $myPDO->query($query) or die(print_r($myPDO->errorInfo()));
-		$rows = $result->rowCount();
+        $query = $myPDO->prepare("SELECT * FROM users WHERE username=:username and password=:password");
+		$query->bindParam(':username', $username, PDO::PARAM_STR);
+		$query->bindParam(':password', $password, PDO::PARAM_STR);
+		$result = $query->execute();
+		if ($result === false) {
+			echo "\nPDO::errorInfo():\n";
+			print_r($myPDO->errorInfo());
+		}
+		$rows = $query->rowCount();
         if($rows==1){
 			$_SESSION['username'] = $username;
 			header("Location: index.php"); // Redirect user to index.php
-            }else{
-				echo "<div class='form'><h3>Username/password is incorrect.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
-				}
+		} else {
+			echo "<div class='form'><h3>Username/password is incorrect.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
+		}
     }else{
 ?>
 <div class="form">

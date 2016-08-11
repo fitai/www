@@ -24,6 +24,18 @@ if (!$stmt) {
 else {
 	$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	$content = $results[0];
+	//echo json_encode($results);
+	$timepointData = $content['timepoint'];
+	$timepointData = str_replace("}", "", str_replace("{", "", $timepointData));
+	$axData = $content['a_x'];
+	$axData = str_replace("}", "", str_replace("{", "", $axData));
+	$contentArray = array (
+						'timepoint' => array($timepointData),
+						'a_x' => array($axData)
+					);
+	//echo $timepointData;
+	//print_r($contentArray);
+	$content = $contentArray;
 }
 $stmt2 = $myPDO->query($sql2);
 if (!$stmt2) {
@@ -48,6 +60,6 @@ $master = array
 				'header' => $header,
 				'content' => $content	
 			);
-$master = json_encode($master);
-echo $master;
-?>
+
+//echo array2Json($master);
+echo "'".json_encode($master)."'";

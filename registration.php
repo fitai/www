@@ -22,13 +22,24 @@ Website: https://htmlcssphptutorial.wordpress.com
         $password = $_POST['password'];
 		$username = stripslashes($username);
 		$email = stripslashes($email);
-		$password = stripslashes($password);
+		$password = md5(stripslashes($password));
 		$trn_date = date("Y-m-d H:i:s");
-        $query = $myPDO->prepare("INSERT into `users` (username, password, email, trn_date) VALUES ('$username', '".md5($password)."', '$email', '$trn_date')");
-        $result = $myPDO->query($query);
-        if($result){
+        $query = $myPDO->prepare("INSERT INTO users (username, password, email, trn_date) VALUES (:username, :password, :email, :trn_date)");
+		$query->bindParam(':username', $username, PDO::PARAM_STR);
+		$query->bindParam(':password', $password, PDO::PARAM_STR);
+		$query->bindParam(':email', $email, PDO::PARAM_STR);
+		$query->bindParam(':trn_date', $trn_date, PDO::PARAM_STR);
+        //$result = $myPDO->query($query);
+		$result = $query->execute();
+        if($result) {
             echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
         }
+		else if($result === false) {
+			echo "\nPDO::errorInfo():\n";
+			print_r($myPDO->errorInfo());
+		}
+		else 
+			echo "Nope";
     }else{
 ?>
 <div class="form">
