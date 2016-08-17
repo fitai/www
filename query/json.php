@@ -1,10 +1,9 @@
 <?php
 include "connect.php";
 
-if ($_REQUEST['liftid'])
-	$liftid = $_REQUEST['liftid'];
-else
-	$liftid = 0;
+$liftid = '0';
+/*if ($_REQUEST['liftid'])
+	$liftid = $_REQUEST['liftid'];*/
 		
 $sql = "SELECT 
 		ARRAY_AGG(timepoint) AS timepoint, 
@@ -44,9 +43,9 @@ if (!$stmt2) {
 }
 else {
 	$results = $stmt2->fetchAll(PDO::FETCH_ASSOC);	
-	$rate = $results[0][lift_sampling_rate];
-	$weight = $results[0][lift_weight];
-	$units = $results[0][lift_weight_units];
+	$rate = $results[0]['lift_sampling_rate'];
+	$weight = $results[0]['lift_weight'];
+	$units = $results[0]['lift_weight_units'];
 	$header = array
 		(
 			'lift_id' => $liftid,
@@ -61,5 +60,8 @@ $master = array
 				'content' => $content	
 			);
 
-//echo array2Json($master);
-echo "'".json_encode($master)."'";
+
+$json = "'".json_encode($master)."'";
+//$json = json_encode($master);
+//echo exec("/var/www/html/query/php_process_data.py ".$json);
+echo exec('/var/opt/python/fitai/php_process_data.py '.$json);
