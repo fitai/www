@@ -23,6 +23,7 @@ if (!$stmt) {
 else {
 	$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	$content = $results[0];
+	//echo json_encode($results);
 	$timepointData = $content['timepoint'];
 	$timepointData = str_replace("}", "", str_replace("{", "", $timepointData));
 	$axData = $content['a_x'];
@@ -31,6 +32,8 @@ else {
 						'timepoint' => array($timepointData),
 						'a_x' => array($axData)
 					);
+	//echo $timepointData;
+	//print_r($contentArray);
 	$content = $contentArray;
 }
 $stmt2 = $myPDO->query($sql2);
@@ -57,38 +60,10 @@ $master = array
 		'content' => $content	
 	);
 
-//Prepare and execute python script
 $json = "'".json_encode($master)."'";
-$return = "";
-$output = "";
-$results = exec("/home/jbrubaker/anaconda2/envs/fitai/bin/python /var/opt/python/fitai/php_process_data.py -d ".$json, $output, $return);
-
-//Turn JSON to Array
-$outputArray = json_decode($results, true);
-
-//Create array for headers
-$headerArray = array(json_decode($output[6], true));
-
-
-//Output to CSV
-function outputCSV($data) {
-	$outputBuffer = fopen("php://output", 'w');
-	foreach($data as $val) {
-		fputcsv($outputBuffer, $val);
-	}
-	fclose($outputBuffer);
-}
-
-//Download results as CSV
-$filename = date('Y-m-d-His');
-$csvResults = array_merge($headerArray, $outputArray);
-
-header("Content-type: text/csv");
-header("Content-Disposition: attachment; filename={$filename}.csv");
-header("Pragma: no-cache");
-header("Expires: 0");
-
-outputCSV($csvResults);
-?>
-
-
+//$json = json_encode($master);
+//echo exec("/var/www/html/query/php_process_data.py ".$json);
+$pythonpath = "/home/jbrubaker/anaconda2/envs/fitai/bin/python";
+//putenv('PYTHONPATH='.$pythonpath);
+//echo exec('/var/opt/python/fitai/php_process_data.py -d '.$json);
+echo exec("/home/jbrubaker/anaconda2/envs/fitai/bin/python php_process_data.py -d 'test'");
