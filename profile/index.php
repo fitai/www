@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Profile";
 include("/var/www/html/header.php");
 ?>
 <h1><?php echo $title; ?></h1>
