@@ -1,0 +1,9 @@
+Done loading serverNew connection! (43)
+New connection! (89)
+Connection 89 has disconnected
+New connection! (94)
+Connection 94 has disconnected
+New connection! (101)
+Connection 101 sending message "kyle stinks" to 1 other connection
+<script>console.log( 'Message: kyle stinks');</script>Connection 43 has disconnected
+New connection! (106)

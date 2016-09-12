@@ -31,7 +31,7 @@ function get_athlete_team_name() {
 		SELECT ti.team_name 
 		FROM team_info AS ti 
 		INNER JOIN athlete_info AS ai 
-		ON ti.coach_id = ai.coach_id 
+		ON ti.team_id = ai.team_id 
 		WHERE ai.user_id=:user_id");
 	$query->bindParam(':user_id', $_SESSION['userID'], PDO::PARAM_STR);
 	$result = $query->execute();
