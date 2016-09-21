@@ -7,3 +7,92 @@ New connection! (101)
 Connection 101 sending message "kyle stinks" to 1 other connection
 <script>console.log( 'Message: kyle stinks');</script>Connection 43 has disconnected
 New connection! (106)
+Connection 101 sending message "send me a message" to 1 other connection
+<script>console.log( 'Message: send me a message');</script>Connection 106 sending message "this is a weird thing" to 1 other connection
+<script>console.log( 'Message: this is a weird thing');</script>Connection 106 sending message "test" to 1 other connection
+<script>console.log( 'Message: test');</script>Connection 101 sending message "nope. its just you" to 1 other connection
+<script>console.log( 'Message: nope. its just you');</script>Connection 101 has disconnected
+New connection! (111)
+Connection 111 sending message "Hello World!" to 1 other connection
+<script>console.log( 'Message: Hello World!');</script>Connection 106 sending message "I'm gonna conn.send you random shit, and when you wake up your broswer's gonna go crazy" to 1 other connection
+<script>console.log( 'Message: I'm gonna conn.send you random shit, and when you wake up your broswer's gonna go crazy');</script>Connection 106 sending message "
+ I wonder..." to 1 other connection
+<script>console.log( 'Message: 
+ I wonder...');</script>New connection! (116)
+Connection 116 has disconnected
+Connection 111 has disconnected
+Connection 106 has disconnected
+New connection! (221)
+New connection! (226)
+Connection 226 sending message "Hello, World" to 1 other connection
+<script>console.log( 'Message: Hello, World');</script>Connection 226 has disconnected
+Connection 221 has disconnected
+New connection! (231)
+New connection! (236)
+Connection 236 sending message "Loop 0: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}" to 1 other connection
+<script>console.log( 'Message: Loop 0: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}');</script>Connection 236 has disconnected
+New connection! (241)
+Connection 241 sending message "Loop 0: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}" to 1 other connection
+<script>console.log( 'Message: Loop 0: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}');</script>Connection 241 sending message "Loop 1: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}" to 1 other connection
+<script>console.log( 'Message: Loop 1: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}');</script>Connection 241 has disconnected
+New connection! (246)
+Connection 246 sending message "Loop 0: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}
+" to 1 other connection
+<script>console.log( 'Message: Loop 0: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}
+');</script>Connection 246 sending message "Loop 1: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}
+" to 1 other connection
+<script>console.log( 'Message: Loop 1: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}
+');</script>Connection 246 has disconnected
+Connection 231 has disconnected
+New connection! (251)
+New connection! (256)
+Connection 256 sending message "
+Loop 0: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}
+" to 1 other connection
+<script>console.log( 'Message: 
+Loop 0: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}
+');</script>Connection 256 sending message "
+Loop 1: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}
+" to 1 other connection
+<script>console.log( 'Message: 
+Loop 1: 
+ { 'header': { 'u_id': 1, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}
+');</script>Connection 256 has disconnected
+New connection! (261)
+Connection 261 sending message "{ 'header': { 'u_id': 0, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}" to 1 other connection
+<script>console.log( 'Message: { 'header': { 'u_id': 0, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}');</script>Connection 261 sending message "{ 'header': { 'u_id': 0, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}" to 1 other connection
+<script>console.log( 'Message: { 'header': { 'u_id': 0, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}');</script>Connection 261 has disconnected
+New connection! (266)
+Connection 266 sending message "{ 'header': { 'u_id': 0, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}" to 1 other connection
+<script>console.log( 'Message: { 'header': { 'u_id': 0, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}');</script>Connection 266 sending message "{ 'header': { 'u_id': 0, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}" to 1 other connection
+<script>console.log( 'Message: { 'header': { 'u_id': 0, 'lift_id': 1}, 'content': {'v_rms': [0, 1, 2, 3, 4], 'p_rms': [5, 6, 7, 8, 9] }}');</script>Connection 266 has disconnected
+Connection 251 has disconnected
+New connection! (276)
+New connection! (281)
+Connection 281 sending message "{"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}" to 1 other connection
+<script>console.log( 'Message: {"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}');</script>Connection 281 sending message "{"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}" to 1 other connection
+<script>console.log( 'Message: {"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}');</script>Connection 281 has disconnected
+New connection! (286)
+New connection! (291)
+Connection 291 sending message "{"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}" to 2 other connections
+<script>console.log( 'Message: {"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}');</script>Connection 291 sending message "{"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}" to 2 other connections
+<script>console.log( 'Message: {"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}');</script>Connection 291 has disconnected
+Connection 286 has disconnected
+New connection! (296)
+New connection! (301)
+Connection 301 sending message "{"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}" to 2 other connections
+<script>console.log( 'Message: {"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}');</script>Connection 301 sending message "{"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}" to 2 other connections
+<script>console.log( 'Message: {"header": { "u_id": 0, "lift_id": 1}, "content": {"v_rms": [0, 1, 2, 3, 4], "p_rms": [5, 6, 7, 8, 9] }}');</script>Connection 301 has disconnected

@@ -1,27 +1,42 @@
 <?php
+$title = "Now";
+include("/var/www/html/header-app.php");
 ?>
-<!DOCTYPE>
-<HTML>
-<head>
-</head>
-<body>
-<script>
-document.write("attempting to establish connection...<br>");
 
-document.write(location.port);
+<div id="connect_string"></div>
+<div id="data-container" class="data-container flexbox">
+	<div class="tab">
+		<span id="rep-count" class="count-number">0</span> <span class="count-text">reps</span>
+	</div>
+</div>
+<div class="flexbox charts-container">
+	<div id="chart_div" class="chart"></div>
+	<div id="chart_column" class="chart"></div>
+</div>
+<script>
+var connectDiv = document.getElementById("connect_string");
+var gauge = document.getElementById("chart_div");
+connectDiv.innerHTML="attempting to establish connection...<br>";
+
+connectDiv.innerHTML=location.port;
 
 var conn = new WebSocket('ws://52.204.229.101:8080');
-document.write("did something...<br>");
+connectDiv.innerHTML="did something...<br>";
 conn.onopen = function(e) {
     console.log("Connection established!");
-    document.write("Connection successful<br>");
+    connectDiv.innerHTML="Connection successful<br>";
 };
 
 conn.onmessage = function(e) {
     console.log(e.data);
-    document.write(e.data);
+    connectDiv.innerHTML=e.data;
+	var values = JSON.parse(e.data);
+	updateGauge(values.velocity);
+	updateColumn(values.power);
+	updateReps(values.repCount);
 };
-document.write("\nDone!");
+connectDiv.innerHTML="\nDone!";
 </script>
-</body>
-</HTML>
+<?php
+include("/var/www/html/footer.php");
+?>

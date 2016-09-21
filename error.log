@@ -1,17 +1,20 @@
-[Mon Sep 12 06:25:01.818480 2016] [mpm_prefork:notice] [pid 2592] AH00163: Apache/2.4.18 (Ubuntu) configured -- resuming normal operations
-[Mon Sep 12 06:25:01.818498 2016] [core:notice] [pid 2592] AH00094: Command line: '/usr/sbin/apache2'
-[Mon Sep 12 16:14:31.669571 2016] [:error] [pid 4218] [client 71.119.185.97:52016] PHP Warning:  require(/var/www/html/vendor/autoload.php): failed to open stream: No such file or directory in /var/www/html/header.php on line 2, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/
-[Mon Sep 12 16:14:31.669609 2016] [:error] [pid 4218] [client 71.119.185.97:52016] PHP Fatal error:  require(): Failed opening required '/var/www/html/vendor/autoload.php' (include_path='.:/usr/share/php') in /var/www/html/header.php on line 2, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/
-[Mon Sep 12 16:57:35.992239 2016] [:error] [pid 11337] [client 71.119.185.97:52808] PHP Warning:  require(/var/www/html/vendor/autoload.php): failed to open stream: No such file or directory in /var/www/html/MyApp/chat-server.php on line 7, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/MyApp/
-[Mon Sep 12 16:57:35.992269 2016] [:error] [pid 11337] [client 71.119.185.97:52808] PHP Fatal error:  require(): Failed opening required '/var/www/html/vendor/autoload.php' (include_path='.:/usr/share/php') in /var/www/html/MyApp/chat-server.php on line 7, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/MyApp/
-[Mon Sep 12 16:57:38.070416 2016] [:error] [pid 11338] [client 71.119.185.97:52813] PHP Fatal error:  Interface 'Ratchet\\MessageComponentInterface' not found in /var/www/html/MyApp/Chat.php on line 6, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/MyApp/
-[Mon Sep 12 16:59:53.205080 2016] [:error] [pid 11337] [client 71.119.185.97:52845] PHP Fatal error:  Uncaught Error: Class 'MyApp\\Chat' not found in /var/www/html/MyApp/chat-server.php:12\nStack trace:\n#0 {main}\n  thrown in /var/www/html/MyApp/chat-server.php on line 12, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/MyApp/
-[Mon Sep 12 17:03:37.171495 2016] [:error] [pid 4211] [client 71.119.185.97:52896] PHP Fatal error:  Interface 'Ratchet\\MessageComponentInterface' not found in /var/www/html/MyApp/Chat.php on line 6, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/MyApp/
-[Mon Sep 12 17:07:00.907687 2016] [:error] [pid 11338] [client 71.119.185.97:53092] PHP Warning:  The use statement with non-compound name 'Chat' has no effect in /var/www/html/MyApp/chat-server.php on line 6, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/MyApp/
-[Mon Sep 12 17:07:00.908064 2016] [:error] [pid 11338] [client 71.119.185.97:53092] PHP Fatal error:  Uncaught Error: Class 'Chat' not found in /var/www/html/MyApp/chat-server.php:13\nStack trace:\n#0 {main}\n  thrown in /var/www/html/MyApp/chat-server.php on line 13, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/MyApp/
-[Mon Sep 12 17:54:29.331128 2016] [:error] [pid 4218] [client 71.119.185.97:54322] PHP Fatal error:  Uncaught Error: Class 'MyApp\\Chat' not found in /var/www/html/MyApp/chat-server.php:12\nStack trace:\n#0 {main}\n  thrown in /var/www/html/MyApp/chat-server.php on line 12
-[Mon Sep 12 17:58:54.017213 2016] [:error] [pid 11337] [client 71.119.185.97:54406] PHP Fatal error:  Uncaught Error: Class 'MyApp\\Chat' not found in /var/www/html/MyApp/chat-server.php:12\nStack trace:\n#0 {main}\n  thrown in /var/www/html/MyApp/chat-server.php on line 12
-[Mon Sep 12 18:04:16.488112 2016] [:error] [pid 5996] [client 71.119.185.97:54532] PHP Fatal error:  Uncaught Error: Class 'MyApp\\Chat' not found in /var/www/html/MyApp/chat-server.php:12\nStack trace:\n#0 {main}\n  thrown in /var/www/html/MyApp/chat-server.php on line 12
-[Mon Sep 12 19:03:11.537808 2016] [mpm_prefork:notice] [pid 2592] AH00169: caught SIGTERM, shutting down
-[Mon Sep 12 19:04:21.980652 2016] [mpm_prefork:notice] [pid 2650] AH00163: Apache/2.4.18 (Ubuntu) configured -- resuming normal operations
-[Mon Sep 12 19:04:21.983193 2016] [core:notice] [pid 2650] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Sep 14 06:25:02.121794 2016] [mpm_prefork:notice] [pid 8261] AH00163: Apache/2.4.18 (Ubuntu) configured -- resuming normal operations
+[Wed Sep 14 06:25:02.121812 2016] [core:notice] [pid 8261] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Sep 14 12:42:38.636160 2016] [mpm_prefork:notice] [pid 8261] AH00169: caught SIGTERM, shutting down
+[Wed Sep 14 12:42:39.764623 2016] [mpm_prefork:notice] [pid 12706] AH00163: Apache/2.4.18 (Ubuntu) configured -- resuming normal operations
+[Wed Sep 14 12:42:39.764667 2016] [core:notice] [pid 12706] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Sep 14 12:43:10.938740 2016] [mpm_prefork:notice] [pid 12706] AH00169: caught SIGTERM, shutting down
+[Wed Sep 14 12:43:12.022662 2016] [mpm_prefork:notice] [pid 12913] AH00163: Apache/2.4.18 (Ubuntu) configured -- resuming normal operations
+[Wed Sep 14 12:43:12.022709 2016] [core:notice] [pid 12913] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Sep 14 15:27:34.396003 2016] [:error] [pid 12976] [client 71.119.185.97:51486] PHP Notice:  Undefined index: id in /var/www/html/MyApp/push.php on line 3
+[Wed Sep 14 15:29:15.561259 2016] [:error] [pid 12975] [client 71.119.185.97:52361] PHP Notice:  Undefined index: cat in /var/www/html/MyApp/post.php on line 3
+[Wed Sep 14 15:29:15.561334 2016] [:error] [pid 12975] [client 71.119.185.97:52361] PHP Fatal error:  Uncaught Error: Class 'ZMQContext' not found in /var/www/html/MyApp/post.php:17\nStack trace:\n#0 {main}\n  thrown in /var/www/html/MyApp/post.php on line 17
+[Wed Sep 14 15:31:14.550295 2016] [:error] [pid 13559] [client 71.119.185.97:52395] PHP Notice:  Undefined index: id in /var/www/html/MyApp/push.php on line 3
+[Wed Sep 14 15:32:29.506224 2016] [:error] [pid 12916] [client 71.119.185.97:52418] PHP Fatal error:  Uncaught Error: Class 'ZMQContext' not found in /var/www/html/MyApp/post.php:17\nStack trace:\n#0 {main}\n  thrown in /var/www/html/MyApp/post.php on line 17
+[Wed Sep 14 15:45:35.646501 2016] [mpm_prefork:notice] [pid 12913] AH00169: caught SIGTERM, shutting down
+[Wed Sep 14 15:45:36.736846 2016] [mpm_prefork:notice] [pid 14792] AH00163: Apache/2.4.18 (Ubuntu) configured -- resuming normal operations
+[Wed Sep 14 15:45:36.736888 2016] [core:notice] [pid 14792] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Sep 14 22:47:37.351513 2016] [:error] [pid 14982] [client 71.119.185.97:61296] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/html/MyApp/json-parse.php:11\nStack trace:\n#0 {main}\n  thrown in /var/www/html/MyApp/json-parse.php on line 11
+[Wed Sep 14 22:51:33.995819 2016] [:error] [pid 14797] [client 71.119.185.97:61419] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/html/MyApp/json-parse.php:10\nStack trace:\n#0 {main}\n  thrown in /var/www/html/MyApp/json-parse.php on line 10
+[Wed Sep 14 22:52:43.515723 2016] [:error] [pid 14798] [client 71.119.185.97:61439] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/html/MyApp/json-parse.php:10\nStack trace:\n#0 {main}\n  thrown in /var/www/html/MyApp/json-parse.php on line 10
+[Wed Sep 14 23:49:34.708257 2016] [:error] [pid 14798] [client 71.119.185.97:62519] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in /var/www/html/MyApp/json-parse.php on line 3
