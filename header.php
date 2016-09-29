@@ -13,6 +13,9 @@ require("/var/www/html/auth.php");
 <link rel="stylesheet" href="/css/webfont.css" />
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/js/charts.js"></script>
 </head>
 <body>
 <div id="body-content" class="body-<?php echo strtolower($title); ?>" >
@@ -55,3 +58,4 @@ require("/var/www/html/auth.php");
 		<header>
 			<img id="logo" src="/images/fitai-logo-black.svg">
 		</header>
+		<div id="dynamic-content">
