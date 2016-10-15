@@ -66,8 +66,8 @@ class Chat implements MessageComponentInterface {
 			$sendMsg = "";
 			
 			//Rep Counter
-			$repCount = $data['content']['rep_count'];
-			if ($repCount == null || $repCount = undefined)
+			$repCount = $data['rep_count'];
+			if ($repCount == null)
 				$repCount = 0;
 			
 			//Velocity Calculations

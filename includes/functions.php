@@ -1,4 +1,7 @@
 <?php
+function site_url() {
+	return "http://ec2-52-204-229-101.compute-1.amazonaws.com/";
+}
 function home_path($data) {
 	echo "/var/www/html/".$data;
 }
@@ -25,6 +28,16 @@ function get_athlete_school() {
 }
 
 /* Team Calls */
+function get_athlete_team_id() {
+	global $myPDO;
+	$query = $myPDO->prepare("SELECT team_id FROM athlete_info WHERE user_id=:user_id");
+	$query->bindParam(':user_id', $_SESSION['userID'], PDO::PARAM_STR);
+	$result = $query->execute();
+	$fetch = $query->fetch(PDO::FETCH_OBJ);
+	$teamID = $fetch->team_id;
+	
+	return $teamID;
+}
 function get_athlete_team_name() {
 	global $myPDO;
 	$query = $myPDO->prepare("
@@ -48,9 +61,9 @@ function get_coach_id() {
 	$query->bindParam(':user_id', $_SESSION['userID'], PDO::PARAM_STR);
 	$result = $query->execute();
 	$fetch = $query->fetch(PDO::FETCH_OBJ);
-	$userID = $fetch->coach_id;
+	$coachID = $fetch->coach_id;
 	
-	return $userID;
+	return $coachID;
 }
 function get_coach_name() {
 	global $myPDO;
@@ -86,6 +99,16 @@ function get_coach_first_name() {
 }
 
 /* Athlete Calls */
+function get_athlete_id($userID) {	
+	global $myPDO;
+	$query = $myPDO->prepare("SELECT athlete_id FROM athlete_info WHERE user_id=:user_id");
+	$query->bindParam(':user_id', $userID, PDO::PARAM_STR);
+	$result = $query->execute();
+	$fetch = $query->fetch(PDO::FETCH_ASSOC);
+	$athleteID = $fetch['athlete_id'];
+
+	return $athleteID;
+}
 function get_athlete_name() {
 	global $myPDO;
 	$query = $myPDO->prepare("SELECT athlete_first_name, athlete_last_name FROM athlete_info WHERE user_id=:user_id");
@@ -97,6 +120,26 @@ function get_athlete_name() {
 	$fullName = $firstName." ".$lastName;
 	
 	return $fullName;
+}
+function get_athlete_age() {
+	global $myPDO;
+	$query = $myPDO->prepare("SELECT athlete_age FROM athlete_info WHERE user_id=:user_id");
+	$query->bindParam(':user_id', $_SESSION['userID'], PDO::PARAM_STR);
+	$result = $query->execute();
+	$fetch = $query->fetch(PDO::FETCH_ASSOC);
+	$athleteAge = $fetch['athlete_age'];
+	
+	return $athleteAge;
+}
+function get_athlete_gender() {
+	global $myPDO;
+	$query = $myPDO->prepare("SELECT athlete_gender FROM athlete_info WHERE user_id=:user_id");
+	$query->bindParam(':user_id', $_SESSION['userID'], PDO::PARAM_STR);
+	$result = $query->execute();
+	$fetch = $query->fetch(PDO::FETCH_ASSOC);
+	$athleteGender = $fetch['athlete_gender'];
+	
+	return $athleteGender;
 }
 function get_next_lift() {
 	global $myPDO;

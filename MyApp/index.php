@@ -2,7 +2,7 @@
 $title = "Now";
 include("/var/www/html/header-app.php");
 ?>
-
+<div id="reset-reps" class="reset-reps" onclick="resetReps();">Reset Reps</div>
 <div id="connect_string"></div>
 <div id="data-container" class="data-container flexbox">
 	<div class="tab">
@@ -36,6 +36,16 @@ conn.onmessage = function(e) {
 	updateReps(values.repCount);
 };
 connectDiv.innerHTML="\nDone!";
+
+//Reset Reps
+function resetReps() {
+	$.ajax({
+		url: "reset-reps.php"
+	}).done(function(e) {
+		console.log(e);
+		updateReps('0');
+	});
+}
 </script>
 <?php
 include("/var/www/html/footer.php");

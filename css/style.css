@@ -3,18 +3,38 @@ Fit AI
 Created by: Business Website Builders
 Author URI: http://www.businesswebsite.builders
 */
-/* Universal */
+/*****************
+Variables
+*****************/
+/*****************
+Mixins
+*****************/
+/*****************
+Universal
+*****************/
 a {
-  color: blue;
+  color: #00aeef;
   text-decoration: none;
   transition: all 0.5s; }
   a:hover {
-    color: #00a6dd; }
+    color: #0081b1; }
 
 body {
   color: #000;
   font-family: 'Montserrat', sans-serif;
   margin: 0; }
+
+button {
+  min-height: 40px;
+  padding: 20px;
+  font-size: 20px;
+  font-size: 1.25;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  margin: 15px; }
+
+.center {
+  text-align: center; }
 
 .clearfix:before, .clearfix:after {
   content: "";
@@ -72,6 +92,7 @@ header {
   padding-right: 20px;
   color: #a8c9d7;
   font-size: 25px;
+  font-size: 1.5625;
   position: relative;
   bottom: -5px; }
 .nav-items div span {
@@ -101,6 +122,64 @@ header {
   /* Internet Explorer 10-11 */
   color: #e8e8e8; }
 
+.overlay {
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .overlay .content {
+    background-color: #fff;
+    padding: 20px; }
+
+/* Forms */
+input, #login input {
+  width: 230px;
+  height: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  color: #000;
+  border: 1px solid darkgray; }
+  input[type=submit], #login input[type=submit] {
+    background-color: #00a6dd;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: background-color 0.5s; }
+  input[type=submit]:hover, #login input[type=submit]:hover {
+    background-color: #00c0ff; }
+  input::-webkit-input-placeholder, #login input::-webkit-input-placeholder, input::-moz-placeholder, #login input::-moz-placeholder, input:-ms-input-placeholder, #login input:-ms-input-placeholder, input:-moz-placeholder, #login input:-moz-placeholder {
+    color: #fff; }
+  input:focus, #login input:focus {
+    outline: none; }
+
+select {
+  width: 250px;
+  height: 50px;
+  padding: 0 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid darkgray; }
+  select:focus {
+    outline: none; }
+
+label {
+  width: 100px; }
+
 @media (max-width: 1300px) {
   #main {
     margin-left: 200px; } }
@@ -113,7 +192,9 @@ header {
 @media (max-height: 410px) {
   #nav-menu {
     position: absolute; } }
-/* Login */
+/*****************
+Login
+*****************/
 .body-login #main {
   margin: 0;
   padding: 0; }
@@ -135,41 +216,24 @@ header {
     width: 250px; }
 
 .form-error {
-  color: red;
+  color: #FF2C00;
   margin-bottom: 15px; }
 
 #login form {
   text-align: center;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif; }
+  color: #fff; }
 #login input {
-  width: 230px;
   height: 40px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
   border-radius: 50px;
   padding: 10px 50px 10px 70px;
   color: #FFF;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px; }
-#login input[type=submit] {
-  background-color: #00a6dd;
-  text-align: center;
-  width: 100%;
-  height: 60px;
-  margin-top: 20px;
-  padding: 10px 50px;
-  cursor: pointer;
-  transition: background-color 0.5s; }
-#login input[type=submit]:hover {
-  background-color: #00c0ff; }
-#login input::-webkit-input-placeholder,
-#login input::-moz-placeholder,
-#login input:-ms-input-placeholder,
-#login input:-moz-placeholder {
-  color: #fff; }
-#login input:focus {
-  outline: none; }
+  font-size: 14px;
+  font-size: 0.875; }
 
 .form-field {
   position: relative;
@@ -177,6 +241,7 @@ header {
   .form-field i {
     position: absolute;
     font-size: 24px;
+    font-size: 1.5;
     line-height: 60px;
     left: 25px;
     margin-top: 4px; }
@@ -185,9 +250,12 @@ header {
   text-align: right; }
   .login-help a {
     color: #80abba;
-    font-size: 12px; }
+    font-size: 12px;
+    font-size: 0.75; }
 
-/* Now */
+/*****************
+Now
+*****************/
 .chart {
   margin: 0 10px;
   text-align: center; }
@@ -223,6 +291,7 @@ header {
 .data-container {
   color: #bbb;
   font-size: 16px;
+  font-size: 1;
   justify-content: center;
   margin-top: -20px; }
   .data-container .tab {
@@ -247,7 +316,27 @@ header {
 
 .count-number {
   color: #fff;
-  font-size: 50px; }
+  font-size: 50px;
+  font-size: 3.125; }
+
+.reset-reps {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #00aeef;
+  color: #FFF;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3); }
+  .reset-reps:hover {
+    background-color: #00a6dd; }
 
 @media (max-width: 1024px) {
   .charts-container {
