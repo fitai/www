@@ -80,3 +80,39 @@ function updateColumn(a) {
 function updateReps(a) {
 	$("#rep-count").html(a);
 }
+
+// Update Lift Weight
+function updateLiftWeight(a) {
+	$("#lift-weight").html(a);
+}
+
+// Update Lift Type
+function updateLiftType(a) {
+	$("#lift-type").html(a);
+}
+
+// Update Collar ID
+function updateCollarID(a) {
+	$("#collarID").html(a);
+}
+
+// New Lift Form Submission
+$( document ).ready(function() {
+	$("#lift-new-submit").click(function(e) {
+		e.preventDefault();
+		var formData = $('form#lift-new').serialize();
+		$.post('lift-new.php', formData, function(data) {
+			console.log(data);
+			var parsed = $.parseJSON(data);
+			$.each(parsed, function(key,value) {
+				eval(value);
+			});
+			$('#overlay').hide();
+		});
+	});
+});
+
+function liftNew() {
+	var values = $('#lift-new').serializeArray();
+}
+
