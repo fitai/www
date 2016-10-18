@@ -104,7 +104,9 @@ $( document ).ready(function() {
 		$.post('lift-new.php', formData, function(data) {
 			console.log(data);
 			var parsed = $.parseJSON(data);
-			$.each(parsed, function(key,value) {
+			var functions = parsed.functions;
+			console.log(functions);
+			$.each(functions, function(key,value) {
 				eval(value);
 			});
 			$('#overlay').hide();

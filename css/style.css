@@ -84,7 +84,7 @@ header {
     transition: all 0.5s;
     text-transform: uppercase; }
   #nav-menu a:hover {
-    color: #00a6dd; }
+    color: #d4d4d4; }
 
 .nav-items > div {
   margin: 25px 0; }
