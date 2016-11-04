@@ -7,15 +7,18 @@ Author URI: http://www.businesswebsite.builders
 Variables
 *****************/
 /*****************
-Mixins
+* Mixins
 *****************/
 /*****************
-Universal
+* Universal
 *****************/
 a {
   color: #00aeef;
   text-decoration: none;
-  transition: all 0.5s; }
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   a:hover {
     color: #0081b1; }
 
@@ -81,7 +84,10 @@ header {
   #nav-menu a {
     color: #FFF;
     text-decoration: none;
-    transition: all 0.5s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     text-transform: uppercase; }
   #nav-menu a:hover {
     color: #d4d4d4; }
@@ -157,7 +163,10 @@ input, #login input {
     margin-top: 20px;
     padding: 10px 50px;
     cursor: pointer;
-    transition: background-color 0.5s; }
+    -moz-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s; }
   input[type=submit]:hover, #login input[type=submit]:hover {
     background-color: #00c0ff; }
   input::-webkit-input-placeholder, #login input::-webkit-input-placeholder, input::-moz-placeholder, #login input::-moz-placeholder, input:-ms-input-placeholder, #login input:-ms-input-placeholder, input:-moz-placeholder, #login input:-moz-placeholder {
@@ -179,6 +188,11 @@ select {
 
 label {
   width: 100px; }
+  label.error {
+    color: #FF2C00; }
+    label.error:before {
+      content: '\A';
+      white-space: pre; }
 
 @media (max-width: 1300px) {
   #main {
@@ -193,7 +207,7 @@ label {
   #nav-menu {
     position: absolute; } }
 /*****************
-Login
+* Login
 *****************/
 .body-login #main {
   margin: 0;
@@ -254,7 +268,7 @@ Login
     font-size: 0.75; }
 
 /*****************
-Now
+* Now
 *****************/
 .chart {
   margin: 0 10px;
@@ -334,9 +348,18 @@ Now
   cursor: pointer;
   -webkit-box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
   -moz-box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
-  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3); }
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .reset-reps:hover {
     background-color: #00a6dd; }
+
+.end-lift {
+  background-color: #d40000; }
+  .end-lift:hover {
+    background-color: #ea0000; }
 
 @media (max-width: 1024px) {
   .charts-container {

@@ -18,6 +18,8 @@ require("/var/www/html/auth.php");
 <?php if ($title == "Now") : ?>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript" src="/js/charts.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+	<script src="/js/form-validation.js"></script>
 <?php endif; ?>
 
 </head>

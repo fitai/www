@@ -79,8 +79,19 @@ class Chat implements MessageComponentInterface {
 			$power = mmmr($pArray, 'mean');
 			//$sendMsg = sprintf('Velocity Avg: %s<br>Power Avg: %s<br>', $velocity, $power);
 			
+			//Active State
+			$active = $data['header']['active'];
+			if ($active == false) :
+				$activeMsg = "Off";
+			elseif ($active == true) :
+				$activeMsg = "On";	
+			endif;
+			
+			//Athlete ID
+			$athleteID = $data['header']['athlete_id'];
+			
 			//Build Array to send to listener
-			$sendMsg = array("velocity"=>$velocity, "power"=>$power, "repCount"=>$repCount);
+			$sendMsg = array("velocity"=>$velocity, "power"=>$power, "repCount"=>$repCount, "active"=>$activeMsg, "athleteID"=>$athleteID);
 			$sendMsg = json_encode($sendMsg);
 		} else
 			$sendMsg = $msg;

@@ -96,21 +96,37 @@ function updateCollarID(a) {
 	$("#collarID").html(a);
 }
 
+// Update Active
+function updateActive(a) {
+	$("#active").html(a);
+}
+
 // New Lift Form Submission
 $( document ).ready(function() {
 	$("#lift-new-submit").click(function(e) {
 		e.preventDefault();
-		var formData = $('form#lift-new').serialize();
-		$.post('lift-new.php', formData, function(data) {
-			console.log(data);
-			var parsed = $.parseJSON(data);
-			var functions = parsed.functions;
-			console.log(functions);
-			$.each(functions, function(key,value) {
-				eval(value);
+		var validate = $('form#lift-new').valid();
+		if (validate == true) {
+			var formData = $('form#lift-new').serialize();
+			$.post('lift-new.php', formData, function(data) {
+				console.log(data);
+				var parsed = $.parseJSON(data);
+				var functions = parsed.functions;
+				console.log(functions);
+				$.each(functions, function(key,value) {
+					eval(value);
+				});
+				$('#overlay').hide();
 			});
-			$('#overlay').hide();
-		});
+		}
+	});
+	$("#end-lift").click(function(e) {
+		e.preventDefault();
+		var collarID = $('#collarID').text();
+		/*$.post('lift-stop.php', { "collarID": collarID } , function(data) {
+			console.log(data);
+		});*/
+		window.location.href = "summary/?collarID="+collarID;
 	});
 });
 

@@ -10,6 +10,8 @@ Variables
 $font-size: 16px;
 $primary-color: #000;
 $red: #FF2C00;
+$red2: #ea0000;
+$red-dark: #d40000;
 $yellow: #FFB600;
 $white: #FFF;
 $blue: #00aeef;
@@ -18,7 +20,7 @@ $blue-dark: #0081b1;
 $form-border: 1px solid rgb(169, 169, 169);
 
 /*****************
-Mixins
+* Mixins
 *****************/
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -42,15 +44,21 @@ Mixins
     box-shadow: $top $left $blur $color;
   }
 }
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
 
 /*****************
-Universal
+* Universal
 *****************/
 
 a {	
 	color: $blue; 
 	text-decoration: none;
-	transition: all 0.5s;
+	@include transition(all 0.3s);
 
 	&:hover {
 		color: $blue-dark;
@@ -123,7 +131,7 @@ header {
 	a {	
 		color:#FFF; 
 		text-decoration:none;
-		transition: all 0.5s;
+		@include transition(all 0.3s);
 		text-transform: uppercase;
 	}
 	a:hover {
@@ -201,7 +209,7 @@ input {
 		margin-top: 20px;
 		padding: 10px 50px;
 		cursor: pointer;
-		transition: background-color 0.5s;
+		@include transition(background-color 0.3s);
 	}
 	&[type=submit]:hover {
 		background-color: #00c0ff;
@@ -229,6 +237,14 @@ select {
 }
 label {
 	width: 100px;
+	
+	&.error {
+		color: $red;
+		&:before {
+			content: '\A';
+			white-space: pre;
+		}
+	}
 }
 
 @media (max-width:1300px) {
@@ -251,7 +267,7 @@ label {
 }
 
 /*****************
-Login
+* Login
 *****************/
 .body-login {
 	#main {
@@ -322,7 +338,7 @@ Login
 
 
 /*****************
-Now
+* Now
 *****************/
 .chart {
 	margin: 0 10px;
@@ -401,9 +417,17 @@ Now
 	padding: 10px;
 	cursor: pointer;
 	@include box-shadow(0, 0, 10px, rgba(255,255,255,0.3), true);
+	@include transition(all 0.3s);
 	
 	&:hover {
 		background-color: $blue2;
+	}
+}
+.end-lift {
+	background-color: $red-dark;
+	
+	&:hover {
+		background-color: $red2;
 	}
 }
 @media (max-width: 1024px) {

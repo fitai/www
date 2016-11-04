@@ -8,6 +8,9 @@ include("/var/www/html/header-app.php");
 	<div class="tab">
 		<span id="rep-count" class="count-number">0</span> <span class="count-text">reps</span>
 	</div>
+	<div class="tab">
+		<span id="active" class="count-number"></span> <span class="count-text">active</span>
+	</div>
 </div>
 <div class="flexbox charts-container">
 	<div id="chart_div" class="chart"></div>
@@ -34,6 +37,7 @@ conn.onmessage = function(e) {
 	updateGauge(values.velocity);
 	updateColumn(values.power);
 	updateReps(values.repCount);
+	updateActive(values.active);
 };
 connectDiv.innerHTML="\nDone!";
 

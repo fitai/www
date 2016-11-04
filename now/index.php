@@ -2,14 +2,14 @@
 $title = "Now";
 include("/var/www/html/header.php");
 ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.js"></script>
 <div id="overlay" class="overlay">
 	<div class="content center">
 		<form id="lift-new" class="lift new">
 			<p>
 				<label>Collar: </label>
 				<select name="collarID" required>
-					<option value="FAI01">FAI01</option>
-					<option value="FAI02">FAI02</option>
+					<option value="555">555</option>
 				</select>
 			</p>
 			<p>
@@ -21,11 +21,11 @@ include("/var/www/html/header.php");
 			</p>
 			<p>
 				<label>Weight: </label>
-				<input name="lift-weight" type="number" required>
+				<input name="liftWeight" type="number" min="1" required>
 			</p>
 			<p>
 				<label>Reps: </label>
-				<input name="lift-reps" type="number">
+				<input name="liftReps" type="number" min="1" required>
 			</p>
 			<input name="userID" type="hidden" value=<?php echo $_SESSION['userID']; ?>>
 			<p>
@@ -35,7 +35,7 @@ include("/var/www/html/header.php");
 		</form>
 	</div>
 </div>
-
+<div id="end-lift" class="reset-reps end-lift">End Lift</div>
 <div id="connect_string"></div>
 <div id="data-container" class="data-container flexbox">
 	<div class="tab">
@@ -49,6 +49,9 @@ include("/var/www/html/header.php");
 	</div>
 	<div class="tab">
 		<span id="rep-count" class="count-number">0</span> <span class="count-text">reps</span>
+	</div>
+	<div class="tab">
+		<span id="active" class="count-number"></span> <span class="count-text">active</span>
 	</div>
 </div>
 <h1><?php echo $title; ?></h1>
@@ -79,9 +82,12 @@ conn.onmessage = function(e) {
 		updateGauge(values.velocity);
 		updateColumn(values.power);
 		updateReps(values.repCount);
+		updateActive(values.active);
 	}
 };
 connectDiv.innerHTML="\nDone!";
+
+$('form#lift-new').validate();
 </script>
 <?php
 include('/var/www/html/footer.php');

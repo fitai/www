@@ -2,6 +2,7 @@
 $title = "Switch";
 include("/var/www/html/header.php");
 ?>
+<h1><?php echo $title; ?></h1>
 <div id="athlete-switch">
 	<?php
 	$query = $myPDO->prepare("
