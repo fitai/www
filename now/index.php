@@ -9,14 +9,23 @@ include("/var/www/html/header.php");
 			<p>
 				<label>Collar: </label>
 				<select name="collarID" required>
-					<option value="555">555</option>
+					<?php 
+					$collars = get_team_collars();
+					foreach ($collars as $row) :
+					?>
+						<option value="<?php echo $row['collar_id']; ?>"><?php echo $row['collar_id']; ?></option>
+					<?php endforeach; ?>
 				</select>
 			</p>
 			<p>
 				<label>Type: </label>
 				<select name="lift-type" required>
-					<option>Bench</option>
-					<option>Squat</option>
+					<?php 
+					$type = get_lift_types();
+					foreach ($type as $row) :
+					?>
+						<option value="<?php echo $row['name_display']; ?>"><?php echo $row['name_display']; ?></option>
+					<?php endforeach; ?>
 				</select>
 			</p>
 			<p>

@@ -151,4 +151,35 @@ function get_next_lift() {
 	return $fetch;
 }
 
+/* Collar Calls */
+function get_team_collars() {
+	global $myPDO;
+	$query = $myPDO->prepare("
+		SELECT coi.collar_id 
+		FROM collar_info AS coi 
+		INNER JOIN athlete_info AS ai 
+		ON coi.team_id = ai.team_id 
+		WHERE ai.user_id=:user_id
+		ORDER BY coi.collar_id ASC
+	");
+	$query->bindParam(':user_id', $_SESSION['userID'], PDO::PARAM_STR);
+	$result = $query->execute();
+	$fetch = $query->fetchAll(PDO::FETCH_ASSOC);
+	
+	return $fetch;
+}
+
+/* Lift Type Calls */
+function get_lift_types() {
+	global $myPDO;
+	$query = $myPDO->prepare("
+		SELECT * 
+		FROM lift_types
+		ORDER BY name_display ASC
+	");
+	$result = $query->execute();
+	$fetch = $query->fetchAll(PDO::FETCH_ASSOC);
+	
+	return $fetch;
+}
 ?>
