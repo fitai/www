@@ -23,7 +23,7 @@ $array = json_decode($redisReturn, true);
 <h1><?php echo $title; ?></h1>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
-  google.charts.load('current', {'packages':['line']});
+  google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawChart);
 
   function drawChart() {
@@ -60,41 +60,25 @@ $array = json_decode($redisReturn, true);
 	
 	// Velocity chart options
 	var velocityOptions = {
-	  chart: {
-		  title: 'Velocity',
-		  subtitle: 'in m/s^2'
-	  },
+	  title: 'Velocity',
 	  legend: { position: 'bottom' },
-	  explorer: { zoomDelta: 1.1 },
-	  series: {
-		  0: {
-			  labelInLegend: 'Velocity'
-		  }
-	  }
+	  explorer: { zoomDelta: 1.1 }
 	};
 	
 	// Power chart options
 	var powerOptions = {
-	  chart: {
-		  title: 'Power',
-		  subtitle: 'in m/s^2'
-	  },
+	  title: 'Power',
 	  legend: { position: 'bottom' },
-	  explorer: { zoomDelta: 1.1 },
-	  series: {
-		  0: {
-			  labelInLegend: 'Power'
-		  }
-	  }
+	  explorer: { zoomDelta: 1.1 }
 	};
 
 	// Create Velocity chart
-	var velocityChart = new google.charts.Line(document.getElementById('velocity_chart'));
-	velocityChart.draw(velocityData, google.charts.Line.convertOptions(velocityOptions));
+	var velocityChart = new google.visualization.LineChart(document.getElementById('velocity_chart'));
+	velocityChart.draw(velocityData, velocityOptions);
 	
 	// Create Power chart
-	var powerChart = new google.charts.Line(document.getElementById('power_chart'));
-	powerChart.draw(powerData, google.charts.Line.convertOptions(powerOptions));
+	var powerChart = new google.visualization.LineChart(document.getElementById('power_chart'));
+	powerChart.draw(powerData, powerOptions);
   }
 </script>
 <div id="velocity_chart" style="width: 100%; height: 500px"></div>

@@ -1,3 +1,16 @@
-[Fri Nov 04 06:25:01.462962 2016] [mpm_prefork:notice] [pid 2847] AH00163: Apache/2.4.18 (Ubuntu) configured -- resuming normal operations
-[Fri Nov 04 06:25:01.462979 2016] [core:notice] [pid 2847] AH00094: Command line: '/usr/sbin/apache2'
-[Fri Nov 04 06:25:33.298829 2016] [:error] [pid 8513] [client 47.149.151.221:50709] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /var/www/html/now/summary/index.php on line 15, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/now/
+[Mon Dec 12 06:25:01.586323 2016] [mpm_prefork:notice] [pid 2847] AH00163: Apache/2.4.18 (Ubuntu) configured -- resuming normal operations
+[Mon Dec 12 06:25:01.586344 2016] [core:notice] [pid 2847] AH00094: Command line: '/usr/sbin/apache2'
+Traceback (most recent call last):
+  File "/var/opt/python/fitai_controller/comms/update_redis.py", line 7, in <module>
+    from databasing.database_pull import pull_data_by_lift
+ImportError: No module named databasing.database_pull
+[Mon Dec 12 16:18:33.349157 2016] [:error] [pid 23596] [client 47.149.151.221:50528] PHP Notice:  Only variables should be passed by reference in /var/www/html/now/lift-new.php on line 56, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/now/
+Traceback (most recent call last):
+  File "/var/opt/python/fitai_controller/comms/update_redis.py", line 7, in <module>
+    from databasing.database_pull import pull_data_by_lift
+ImportError: No module named databasing.database_pull
+Traceback (most recent call last):
+  File "/var/opt/python/fitai_controller/comms/update_redis.py", line 7, in <module>
+    from databasing.database_pull import pull_data_by_lift
+ImportError: No module named databasing.database_pull
+[Mon Dec 12 16:28:39.973438 2016] [:error] [pid 23597] [client 47.149.151.221:50916] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/html/now/summary/index.php:14\nStack trace:\n#0 {main}\n  thrown in /var/www/html/now/summary/index.php on line 14, referer: http://ec2-52-204-229-101.compute-1.amazonaws.com/now/
