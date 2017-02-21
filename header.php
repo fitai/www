@@ -15,7 +15,7 @@ require("/var/www/html/auth.php");
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-<?php if ($title == "Now") : ?>
+<?php if ($title == "Now" || $title == "Admin - Watch") : ?>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript" src="/js/charts.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>

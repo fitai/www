@@ -1,50 +1,44 @@
 <?php
-$title = "Now";
+$title = "Admin - Watch";
 include("/var/www/html/header.php");
 ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.js"></script>
 <div id="overlay" class="overlay">
 	<div class="content center">
-		<form id="lift-new" class="lift new">
+		<form id="lift-watch" class="lift new">
 			<p>
-				<label>Collar: </label>
-				<select name="collarID" required>
-					<?php 
-					$collars = get_team_collars();
-					foreach ($collars as $row) :
+				<label>Athlete: </label>
+				<select name="athleteID" required>
+					<?php
+					$query = $myPDO->prepare("
+						SELECT * 
+						FROM athlete_info
+						WHERE team_id IN (
+							SELECT team_id
+							FROM athlete_info
+							WHERE user_id=:user_id
+							)
+						ORDER BY athlete_first_name
+						");
+					$query->bindParam(':user_id', $_SESSION['userID'], PDO::PARAM_STR);
+					$result = $query->execute();
+					$fetch = $query->fetchAll(PDO::FETCH_ASSOC);
+					foreach ($fetch as $row) :
 					?>
-						<option value="<?php echo $row['collar_id']; ?>"><?php echo $row['collar_id']; ?></option>
-					<?php endforeach; ?>
-				</select>
-			</p>
-			<p>
-				<label>Type: </label>
-				<select name="lift-type" required>
-					<?php 
-					$type = get_lift_types();
-					foreach ($type as $row) :
+						<option value="<?php echo $row['athlete_id']; ?>" data-athlete-name="<?php echo $row['athlete_first_name']." ".$row['athlete_last_name']; ?>"><?php echo $row['athlete_first_name']." ".$row['athlete_last_name']; ?></option>
+					<?php
+					endforeach;
 					?>
-						<option value="<?php echo $row['name_display']; ?>"><?php echo $row['name_display']; ?></option>
-					<?php endforeach; ?>
 				</select>
-			</p>
-			<p>
-				<label>Weight: </label>
-				<input name="liftWeight" type="number" min="1" required>
-			</p>
-			<p>
-				<label>Reps: </label>
-				<input name="liftReps" type="number" min="1" required>
 			</p>
 			<input name="userID" type="hidden" value=<?php echo $_SESSION['userID']; ?>>
 			<p>
-				<button id="lift-new-submit">Submit</button><br>
+				<button id="lift-watch-submit">Submit</button><br>
 				<a href="<?php echo site_url(); ?>">Cancel</a>
 			</p>
 		</form>
 	</div>
 </div>
-<div id="end-lift" class="reset-reps end-lift">End Lift</div>
 <div id="connect_string"></div>
 <div id="data-container" class="data-container flexbox">
 	<div class="tab">
@@ -64,16 +58,23 @@ include("/var/www/html/header.php");
 	</div>
 </div>
 <h1><?php echo $title; ?></h1>
+<div id="athleteID" style="display: none;"></div>
+<div id="currently-watching">
+	<p>
+	Currently Watching: <span id="current-athlete-name">None</span>
+	</p>
+	<p>
+		<a href="/admin/watch/">Select a different athlete</a>
+	</p>
+</div>
 <div class="flexbox charts-container">
 	<div id="chart_div" class="chart"></div>
 	<div id="chart_column" class="chart"></div>
 </div>
-<div id="liftID" class="hidden">
-</div>
 <script>
 var connectDiv = document.getElementById("connect_string");
 var gauge = document.getElementById("chart_div");
-var athleteID = "<?php echo get_athlete_id($_SESSION['userID']); ?>";
+var athleteID = $('#athleteID').text();
 connectDiv.innerHTML="attempting to establish connection...<br>";
 
 connectDiv.innerHTML=location.port;
@@ -86,6 +87,7 @@ conn.onopen = function(e) {
 };
 
 conn.onmessage = function(e) {
+	athleteID = $('#athleteID').text();
 	var values = JSON.parse(e.data);
 	if (values.athleteID == athleteID) {
 		console.log(e.data);
@@ -98,7 +100,7 @@ conn.onmessage = function(e) {
 };
 connectDiv.innerHTML="\nDone!";
 
-$('form#lift-new').validate();
+$('form#lift-watch').validate();
 </script>
 <?php
 include('/var/www/html/footer.php');

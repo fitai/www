@@ -121,6 +121,18 @@ function get_athlete_name() {
 	
 	return $fullName;
 }
+function query_athlete_name($id) {
+	global $myPDO;
+	$query = $myPDO->prepare("SELECT athlete_first_name, athlete_last_name FROM athlete_info WHERE user_id=:user_id");
+	$query->bindParam(':user_id', $id, PDO::PARAM_STR);
+	$result = $query->execute();
+	$fetch = $query->fetch(PDO::FETCH_ASSOC);
+	$firstName = $fetch['athlete_first_name'];
+	$lastName = $fetch['athlete_last_name'];
+	$fullName = $firstName." ".$lastName;
+	
+	return $fullName;
+}
 function get_athlete_age() {
 	global $myPDO;
 	$query = $myPDO->prepare("SELECT athlete_age FROM athlete_info WHERE user_id=:user_id");

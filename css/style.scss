@@ -102,6 +102,9 @@ header {
 	padding: 5px 0;	
 	text-align: center;
 }
+.hidden {
+	display: none;
+}
 #logo {
 	width: 200px;
 }
@@ -379,7 +382,7 @@ label {
 	margin-top: -20px;
 
 	.tab {
-		padding: 0 20px 10px;
+		padding: 0 3% 10px; 
 		position: relative;
 	}	
 }

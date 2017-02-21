@@ -101,6 +101,11 @@ function updateActive(a) {
 	$("#active").html(a);
 }
 
+// Update Lift ID
+function updateLiftID(a) {
+	$("#lift-id").html(a);
+}
+
 // New Lift Form Submission
 $( document ).ready(function() {
 	$("#lift-new-submit").click(function(e) {
@@ -112,6 +117,9 @@ $( document ).ready(function() {
 				console.log(data);
 				var parsed = $.parseJSON(data);
 				var functions = parsed.functions;
+				var liftID = parsed.liftID;
+				console.log('Lift ID: '+liftID);
+				$('#liftID').text(liftID);
 				console.log(functions);
 				$.each(functions, function(key,value) {
 					eval(value);
@@ -120,13 +128,32 @@ $( document ).ready(function() {
 			});
 		}
 	});
+	
+	// End lift Operations
 	$("#end-lift").click(function(e) {
 		e.preventDefault();
 		var collarID = $('#collarID').text();
+		var liftID = $('#liftID').text();
 		/*$.post('lift-stop.php', { "collarID": collarID } , function(data) {
 			console.log(data);
 		});*/
-		window.location.href = "summary/?collarID="+collarID;
+		window.location.href = "summary/?collarID="+collarID+"&liftID="+liftID;
+	});
+});
+
+// Admin Watch Form Submission
+$( document ).ready(function() {
+	$("#lift-watch-submit").click(function(e) {
+		e.preventDefault();
+		var validate = $('form#lift-watch').valid();
+		if (validate == true) {
+			var watchID = $('select[name=athleteID]').val();
+			var athleteName = $('select[name=athleteID]').find(':selected').data('athlete-name');
+			$('#athleteID').text(watchID);
+			$('#current-athlete-name').text(athleteName);
+			console.log('Now watching athleteID:' + watchID + '(' + athleteName + ')');
+			$('#overlay').hide();
+		}
 	});
 });
 

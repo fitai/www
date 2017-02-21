@@ -47,8 +47,10 @@ $redisArray = array(
 				"curr_state" => 'rest',
 				"active" => True
 				);
+				
 $redisReturn = exec("/home/jbrubaker/anaconda2/envs/fitai/bin/python /var/opt/python/fitai_controller/comms/update_redis.py -v -j '".json_encode($redisArray)."'");
 
+$liftID = str_replace("lift_id: ", "", $redisReturn);
 			
 // Update collar_info table
 $query = $myPDO->prepare("UPDATE collar_info SET athlete_id=:athlete_id, last_update=:last_update WHERE collar_id=:collar_id");
@@ -61,7 +63,8 @@ $result = $query->execute();
 $jsonArray = array(
 				"functions" => $returnArray,
 				"redis" => $redisArray,
-				"return" => $redisReturn
+				"return" => $redisReturn,
+				"liftID" => $liftID
 				);
 			
 print json_encode($jsonArray);
