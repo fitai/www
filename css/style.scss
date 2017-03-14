@@ -30,7 +30,7 @@ $form-border: 1px solid rgb(169, 169, 169);
 }
 @mixin font-size($size) {
 		font-size: $size;
-		font-size: $size/$font-size;
+		font-size: ($size/$font-size) + rem;
 
 }
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
@@ -396,15 +396,15 @@ label {
 	z-index: -1;
 	background-color: #000;
 	box-shadow: 5px 5px 10px #9e9e9e;
-	transform: perspective(10px) rotateX(-2deg);
-	transform-origin: top;
+	/*transform: perspective(10px) rotateX(-2deg);
+	transform-origin: top;*/
 	border-width: 0 3px 3px;
     border-color: rgba(156, 156, 156, 0.34);
     border-style: solid;
 }
 .count-number {
 	color: #fff;
-	@include font-size(50px);
+	@include font-size(35px);
 }
 .lift-check {
 	
@@ -443,4 +443,28 @@ label {
 		flex-direction: column;
 		justify-content: flex-start
 	} 
+}
+
+/*****************
+* Summary
+*****************/
+.lift-data {
+	span.title {
+		@include font-size(20px);
+	}
+	.data-item {
+		margin-bottom: 20px;
+	}
+
+}
+.summary-item {
+
+	textarea {
+		width: 100%;
+		min-height: 200px;
+	}
+}
+.summary-edit {
+	cursor: pointer;
+	color: $blue;
 }
