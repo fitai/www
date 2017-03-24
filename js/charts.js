@@ -1,9 +1,10 @@
-google.charts.load('current', {'packages':['corechart', 'gauge']});
+google.charts.load('current', {'packages':['corechart', 'gauge', 'line']});
 google.charts.setOnLoadCallback(drawGauge);
 google.charts.setOnLoadCallback(drawBar);
+google.charts.setOnLoadCallback(drawLine);
 
 //Declare Global Variables
-var data, options, chart, dataColumn, optionsColumn, chartColumn, chartContainerWidth;
+var data, options, chart, dataColumn, optionsColumn, chartColumn, chartContainerWidth, velocityChart, velocityOptions, velocityData;
 
 
 //Gauge
@@ -76,6 +77,91 @@ function updateColumn(a) {
   chartColumn.draw(dataColumn, optionsColumn);
 }
 
+// Line Chart
+
+//Create variables for Line Chart
+var lineColumns = [];
+var timestamps = [];
+var velocity = [];
+function drawLine() {
+	// var jsonString = JSON.parse('<?php echo $redisReturn; ?>');
+	// var columns = jsonString.columns;
+	// var coords = jsonString.data;
+	velocityData = new google.visualization.DataTable();
+	timestamps.push(getCurrentTime());
+	velocity.push(0);
+	// var powerData = new google.visualization.DataTable();
+	
+	// Loop through columns
+	/*for (var key in columns) {
+	  if (columns.hasOwnProperty(key)) {
+		var val = columns[key];
+		data.addColumn('number', val);
+	  }
+	}*/
+	
+	// Velocity Columns
+	velocityData.addColumn('string', 'Timestamp');
+	velocityData.addColumn('number', 'Velocity');
+
+	velocityData.addRow([getCurrentTime(), 0]);
+	
+	// Power Columns
+	// powerData.addColumn('number', columns['timepoint']);
+	// powerData.addColumn('number', columns['p_rms']);
+	
+	// // Add values to rows
+	// for (var key in coords) {
+	// 	var time = coords[key][2];
+	// 	var velocity = coords[key][3];
+	// 	var power = coords[key][1];
+	// 	velocityData.addRow([time, velocity]);
+	// 	// powerData.addRow([time, power]);
+	// }
+	
+	// Velocity chart options
+	velocityOptions = {
+	  chart: {
+		  title: 'Velocity',
+		  subtitle: 'in m/s^2'
+	  },
+	  legend: { position: 'bottom' },
+	  explorer: { zoomDelta: 1.1 },
+	  series: {
+		  0: {
+			  labelInLegend: 'Velocity'
+		  }
+	  }
+	};
+	
+	// Power chart options
+	// var powerOptions = {
+	//   chart: {
+	// 	  title: 'Power',
+	// 	  subtitle: 'in m/s^2'
+	//   },
+	//   legend: { position: 'bottom' },
+	//   explorer: { zoomDelta: 1.1 },
+	//   series: {
+	// 	  0: {
+	// 		  labelInLegend: 'Power'
+	// 	  }
+	//   }
+	// };
+
+	// Create Velocity chart
+	velocityChart = new google.charts.Line(document.getElementById('velocity_chart'));
+	velocityChart.draw(velocityData, google.charts.Line.convertOptions(velocityOptions));
+	
+	// // Create Power chart
+	// var powerChart = new google.charts.Line(document.getElementById('power_chart'));
+	// powerChart.draw(powerData, google.charts.Line.convertOptions(powerOptions));
+}
+function updateLine(a) {
+  velocityData.addRow([getCurrentTime(), a]);
+  velocityChart.draw(velocityData, google.charts.Line.convertOptions(velocityOptions));
+}
+
 //Rep Count
 function updateReps(a) {
 	$("#rep-count").html(a);
@@ -106,12 +192,30 @@ function updateLiftID(a) {
 	$("#lift-id").html(a);
 }
 
+// Get time in 24hr format
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+function getCurrentTime() {
+    var d = new Date();
+    var h = addZero(d.getHours());
+    var m = addZero(d.getMinutes());
+    var s = addZero(d.getSeconds());
+    var time = h + ":" + m + ":" + s;
+    return time;
+}
+
 // New Lift Form Submission
 $( document ).ready(function() {
 	$("#lift-new-submit").click(function(e) {
 		e.preventDefault();
+		console.log('Submitting lift data...');
 		var validate = $('form#lift-new').valid();
 		if (validate == true) {
+			console.log('Form validation successful...');
 			var formData = $('form#lift-new').serialize();
 			$.post('lift-new.php', formData, function(data) {
 				console.log(data);

@@ -96,6 +96,9 @@ conn.onmessage = function(e) {
 		updateColumn(values.power);
 		updateReps(values.repCount);
 		updateActive(values.active);
+		updateCollarID(values.collarID);
+		updateLiftType(values.liftType);
+		updateLiftWeight(values.liftWeight);
 	}
 };
 connectDiv.innerHTML="\nDone!";

@@ -71,7 +71,7 @@ include("/var/www/html/header.php");
 <div id="liftID" class="hidden">
 </div>
 <script>
-var connectDiv = document.getElementById("connect_string");
+var connectDiv = document.getElementById("connect_string");!
 var gauge = document.getElementById("chart_div");
 var athleteID = "<?php echo get_athlete_id($_SESSION['userID']); ?>";
 connectDiv.innerHTML="attempting to establish connection...<br>";
@@ -91,6 +91,7 @@ conn.onmessage = function(e) {
 		console.log(e.data);
 		connectDiv.innerHTML=e.data;
 		updateGauge(values.velocity);
+		updateLine(values.velocity);
 		updateColumn(values.power);
 		updateReps(values.repCount);
 		updateActive(values.active);
@@ -100,6 +101,7 @@ connectDiv.innerHTML="\nDone!";
 
 $('form#lift-new').validate();
 </script>
+<div id="velocity_chart" style="width: 100%; height: 500px"></div>
 <?php
 include('/var/www/html/footer.php');
 ?>

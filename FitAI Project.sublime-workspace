@@ -1,0 +1,559 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"veloc",
+				"velocityData"
+			],
+			[
+				"veloci",
+				"velocityOptions"
+			],
+			[
+				"velo",
+				"velocityChart"
+			],
+			[
+				"note",
+				"note"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "now/summary/index.php",
+			"settings":
+			{
+				"buffer_size": 8979,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "now/index.php",
+			"settings":
+			{
+				"buffer_size": 3296,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/charts.js",
+			"settings":
+			{
+				"buffer_size": 6788,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "now/lift-new.php",
+			"settings":
+			{
+				"buffer_size": 1976,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 334.0,
+		"last_filter": "Snippet: ",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"Snippet: pubf",
+				"Snippet: PHP public function"
+			],
+			[
+				"vmen",
+				"View: Toggle Menu"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Backup/Websites/fitai",
+		"/D/Backup/Websites/fitai/admin",
+		"/D/Backup/Websites/fitai/admin/watch",
+		"/D/Backup/Websites/fitai/includes",
+		"/D/Backup/Websites/fitai/js",
+		"/D/Backup/Websites/fitai/now",
+		"/D/Backup/Websites/fitai/now/summary"
+	],
+	"file_history":
+	[
+		"/D/Backup/Websites/fitai/now/summary/index.php",
+		"/D/Backup/Websites/fitai/js/global.js",
+		"/D/Backup/Websites/fitai/now/index.php",
+		"/D/Backup/Websites/fitai/js/charts.js",
+		"/D/Backup/Websites/fitai/header.php",
+		"/D/Backup/Websites/fitai/css/style.scss",
+		"/D/Backup/Websites/fitai/now/summary/lift-check.php",
+		"/D/Backup/Websites/fitai/includes/connect.php",
+		"/D/wamp64/apps/phppgadmin-master/conf/config.inc.php",
+		"/D/wamp64/apps/phppgadmin-master/classes/database/Postgres94.php",
+		"/D/wamp64/apps/phppgadmin-master/classes/database/ADODB_base.php",
+		"//STORMYCLOUD/share/Desktop Backup/C/wamp/apps/phpPgAdmin-5.1/conf/config.inc.php",
+		"/D/wamp64/apps/phppgadmin-master/libraries/decorator.inc.php",
+		"/D/wamp64/apps/phppgadmin-master/libraries/adodb/drivers/adodb-postgres7.inc.php",
+		"/D/wamp64/apps/phppgadmin-master/libraries/adodb/drivers/adodb-postgres64.inc.php",
+		"/D/wamp64/alias/phppgadmin.conf",
+		"/D/wamp64/apps/phppgadmin-master/libraries/adodb/adodb.inc.php",
+		"/D/wamp64/apps/phppgadmin-master/classes/database/Postgres93.php",
+		"/D/wamp64/apps/phppgadmin-master/classes/database/Postgres.php",
+		"/D/wamp64/apps/phppgadmin-master/classes/database/Connection.php",
+		"/D/wamp64/apps/phppgadmin-master/classes/class.select.php",
+		"/D/wamp64/apps/phppgadmin-master/classes/Misc.php",
+		"/D/wamp64/apps/phppgadmin-master/classes/ArrayRecordSet.php",
+		"/D/wamp64/apps/phpPgAdmin-5.1/conf/config.inc.php",
+		"/D/Backup/Websites/fitai/footer.php",
+		"/D/Backup/Websites/thefixgym.com/wp-content/themes/parallelus-caliber/footer.php",
+		"/D/Backup/Websites/testgit/kylestinks.php",
+		"/C/Users/MonkeyButt/.homestead/Homestead.yaml",
+		"/D/Backup/Websites/fitai/admin/watch/index.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/resources/views/welcome.blade.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/routes/web.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/Http/Middleware/MustBeAdministrator.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/Http/Controllers/HomeController.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/.env",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/config/database.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/Http/Kernel.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/Console/Kernel.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/config/mail.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/resources/views/cards/show.blade.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/Card.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/Http/Controllers/NotesController.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/Note.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/Http/Controllers/CardsController.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/resources/views/notes/edit.blade.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/database/migrations/2017_03_02_042829_create_notes_table.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/User.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/resources/views/layout.blade.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/resources/views/cards/index.blade.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/Http/Controllers/PagesController.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/database/migrations/2017_03_01_234631_create_cards_table.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/resources/views/pages/about.blade.php",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/resources/assets/sass/app.scss",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/public/css/app.css",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/public/css/style.css",
+		"/C/Users/MonkeyButt/AppData/Roaming/Sublime Text 3/Packages/User/public-function-met.sublime-snippet",
+		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/Http/Controllers/Controller.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"_rms",
+			"jsonstring",
+			"redisreturn",
+			"updateredis",
+			"@font-size",
+			"font-size",
+			".tab",
+			"drawLine",
+			"drawbar",
+			"chartcolumn",
+			"updateColumn",
+			"returnexec",
+			"redisexec",
+			"returnexec",
+			"retrunexec"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "now/summary/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8979,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6391,
+								6391
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1729.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "now/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2220,
+								2220
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 773.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/charts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5782,
+								5782
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2869.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "now/lift-new.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1976,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1092,
+								1092
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "FitAI Project.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"charts.js",
+				"js\\charts.js"
+			],
+			[
+				"nowinde",
+				"now\\index.php"
+			],
+			[
+				"conne",
+				"includes\\connect.php"
+			],
+			[
+				"sindex",
+				"now\\summary\\index.php"
+			],
+			[
+				"footer.",
+				"footer.php"
+			],
+			[
+				"header.php",
+				"header.php"
+			],
+			[
+				"welcome",
+				"resources\\views\\welcome.blade.php"
+			],
+			[
+				"kernel",
+				"app\\Http\\Kernel.php"
+			],
+			[
+				"kern",
+				"app\\Console\\Kernel.php"
+			],
+			[
+				"mustbe",
+				"app\\Http\\Middleware\\MustBeAdministrator.php"
+			],
+			[
+				"homec",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"database",
+				"config\\database.php"
+			],
+			[
+				"connection.php",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php"
+			],
+			[
+				"web.php",
+				"routes\\web.php"
+			],
+			[
+				"config/mail",
+				"config\\mail.php"
+			],
+			[
+				"config/data",
+				"config\\database.php"
+			],
+			[
+				"card.php",
+				"app\\Card.php"
+			],
+			[
+				"notes",
+				"app\\Http\\Controllers\\NotesController.php"
+			],
+			[
+				"show.blad",
+				"resources\\views\\cards\\show.blade.php"
+			],
+			[
+				"cards",
+				"app\\Http\\Controllers\\CardsController.php"
+			],
+			[
+				"create_notes",
+				"database\\migrations\\2017_03_02_042829_create_notes_table.php"
+			],
+			[
+				"show.blade",
+				"resources\\views\\cards\\show.blade.php"
+			],
+			[
+				"notescontr",
+				"app\\Http\\Controllers\\NotesController.php"
+			],
+			[
+				"web.",
+				"routes\\web.php"
+			],
+			[
+				"card",
+				"app\\Card.php"
+			],
+			[
+				"layout",
+				"resources\\views\\layout.blade.php"
+			],
+			[
+				"card/index",
+				"resources\\views\\cards\\index.blade.php"
+			],
+			[
+				"note.php",
+				"app\\Note.php"
+			],
+			[
+				"cardscont",
+				"app\\Http\\Controllers\\CardsController.php"
+			],
+			[
+				"pages",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				"pagescont",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				"controll",
+				"app\\Http\\Controllers\\Controller.php"
+			],
+			[
+				"",
+				"routes\\web.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 301.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

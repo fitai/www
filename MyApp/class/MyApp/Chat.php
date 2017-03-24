@@ -89,9 +89,18 @@ class Chat implements MessageComponentInterface {
 			
 			//Athlete ID
 			$athleteID = $data['header']['athlete_id'];
+
+			//Lift Type
+			$liftType = $data['header']['lift_type'];
+			
+			//Lift Weight
+			$liftWeight = $data['header']['lift_weight'];
+
+			//Collar ID
+			$collarID = $data['header']['collar_id'];
 			
 			//Build Array to send to listener
-			$sendMsg = array("velocity"=>$velocity, "power"=>$power, "repCount"=>$repCount, "active"=>$activeMsg, "athleteID"=>$athleteID);
+			$sendMsg = array("velocity"=>$velocity, "power"=>$power, "repCount"=>$repCount, "active"=>$activeMsg, "athleteID"=>$athleteID, "liftType"=>$liftType, "liftWeight"=>$liftWeight, "collarID"=>$collarID,);
 			$sendMsg = json_encode($sendMsg);
 		} else
 			$sendMsg = $msg;
