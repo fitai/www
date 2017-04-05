@@ -55,6 +55,8 @@ button {
 
 .flexbox {
   display: flex; }
+  .flexbox.wrap {
+    flex-wrap: wrap; }
 
 header {
   border-bottom: 1px solid #ccc;
@@ -394,5 +396,11 @@ label {
 .summary-edit {
   cursor: pointer;
   color: #00aeef; }
+
+/*****************
+* Switch
+*****************/
+.athlete-switch .athlete {
+  margin: 10px; }
 
 /*# sourceMappingURL=style.css.map */

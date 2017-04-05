@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"vel_y",
+				"vel_y"
+			],
+			[
+				"exer",
+				"exerciseVariation"
+			],
+			[
+				"var",
+				"variationArr"
+			],
+			[
+				"objC",
+				"objChildChild"
+			],
+			[
+				"equip",
+				"equipType"
+			],
+			[
+				"eq",
+				"equipID"
+			],
+			[
+				"obj",
+				"objChildChild"
+			],
+			[
+				"barbe",
+				"barbell-deadlift"
+			],
+			[
+				"summ",
+				"summary-item"
+			],
+			[
 				"veloc",
 				"velocityData"
 			],
@@ -27,33 +63,7 @@
 			"file": "now/summary/index.php",
 			"settings":
 			{
-				"buffer_size": 8979,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "now/index.php",
-			"settings":
-			{
-				"buffer_size": 3296,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/charts.js",
-			"settings":
-			{
-				"buffer_size": 6788,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "now/lift-new.php",
-			"settings":
-			{
-				"buffer_size": 1976,
+				"buffer_size": 10539,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -108,17 +118,27 @@
 		"/D/Backup/Websites/fitai/admin/watch",
 		"/D/Backup/Websites/fitai/includes",
 		"/D/Backup/Websites/fitai/js",
+		"/D/Backup/Websites/fitai/MyApp",
+		"/D/Backup/Websites/fitai/MyApp/class",
+		"/D/Backup/Websites/fitai/MyApp/class/MyApp",
 		"/D/Backup/Websites/fitai/now",
-		"/D/Backup/Websites/fitai/now/summary"
+		"/D/Backup/Websites/fitai/now/summary",
+		"/D/Backup/Websites/fitai/test",
+		"/D/Backup/Websites/fitai/test/lift-selection"
 	],
 	"file_history":
 	[
 		"/D/Backup/Websites/fitai/now/summary/index.php",
-		"/D/Backup/Websites/fitai/js/global.js",
-		"/D/Backup/Websites/fitai/now/index.php",
 		"/D/Backup/Websites/fitai/js/charts.js",
-		"/D/Backup/Websites/fitai/header.php",
+		"/D/Backup/Websites/fitai/MyApp/index.php",
+		"/D/Backup/Websites/fitai/MyApp/class/MyApp/Chat.php",
+		"/D/Backup/Websites/fitai/admin/watch/index.php",
+		"/D/Backup/Websites/fitai/test/lift-selection/select.html",
 		"/D/Backup/Websites/fitai/css/style.scss",
+		"/D/Backup/Websites/fitai/now/index.php",
+		"/D/Backup/Websites/fitai/now/lift-new.php",
+		"/D/Backup/Websites/fitai/js/global.js",
+		"/D/Backup/Websites/fitai/header.php",
 		"/D/Backup/Websites/fitai/now/summary/lift-check.php",
 		"/D/Backup/Websites/fitai/includes/connect.php",
 		"/D/wamp64/apps/phppgadmin-master/conf/config.inc.php",
@@ -141,7 +161,6 @@
 		"/D/Backup/Websites/thefixgym.com/wp-content/themes/parallelus-caliber/footer.php",
 		"/D/Backup/Websites/testgit/kylestinks.php",
 		"/C/Users/MonkeyButt/.homestead/Homestead.yaml",
-		"/D/Backup/Websites/fitai/admin/watch/index.php",
 		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/resources/views/welcome.blade.php",
 		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/routes/web.php",
 		"/D/Backup/Websites/Laravel/Homestead/Code/weddingease/app/Http/Middleware/MustBeAdministrator.php",
@@ -188,6 +207,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"opt2",
+			"console.log",
+			"opt21",
+			"collar",
+			"liftid",
+			"data-item",
+			"lift-type",
 			"_rms",
 			"jsonstring",
 			"redisreturn",
@@ -229,15 +255,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8979,
+						"buffer_size": 10539,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6391,
-								6391
+								8734,
+								8734
 							]
 						],
 						"settings":
@@ -246,97 +272,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1729.0,
+						"translation.y": 3023.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "now/index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3296,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2220,
-								2220
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 773.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/charts.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6788,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5782,
-								5782
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2869.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "now/lift-new.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1976,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1092,
-								1092
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 135.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -391,8 +330,28 @@
 		"selected_items":
 		[
 			[
+				"summary",
+				"now\\summary\\index.php"
+			],
+			[
 				"charts.js",
 				"js\\charts.js"
+			],
+			[
+				"watch",
+				"admin\\watch\\index.php"
+			],
+			[
+				"myappindex",
+				"MyApp\\index.php"
+			],
+			[
+				"nowindex",
+				"now\\index.php"
+			],
+			[
+				"style.sc",
+				"css\\style.scss"
 			],
 			[
 				"nowinde",

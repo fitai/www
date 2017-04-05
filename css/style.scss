@@ -101,6 +101,10 @@ button {
 }
 .flexbox {
 	display: flex;
+
+	&.wrap {
+		flex-wrap: wrap;
+	}
 }
 header {
 	border-bottom: 1px solid #ccc;
@@ -477,4 +481,13 @@ label {
 .summary-edit {
 	cursor: pointer;
 	color: $blue;
+}
+
+/*****************
+* Switch
+*****************/
+.athlete-switch {
+	.athlete {
+		margin: 10px;
+	}
 }

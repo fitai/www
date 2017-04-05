@@ -129,6 +129,10 @@ $(document).ready(function() {
   google.charts.load('current', {'packages':['line', 'corechart']});
   google.charts.setOnLoadCallback(drawChart);
 
+  function getColumns(columns) {
+  	return columns['timepoint'];
+  }
+
   function drawChart() {
 	var jsonString = JSON.parse('<?php echo $redisReturn; ?>');
 	console.log(jsonString);
@@ -147,20 +151,37 @@ $(document).ready(function() {
 	
 	// Velocity Columns
 	velocityData.addColumn('number', columns['timepoint']);
-	velocityData.addColumn('number', columns['v_rms']);
+	velocityData.addColumn('number', columns['v_x']);
+	velocityData.addColumn('number', columns['v_y']);
+	velocityData.addColumn('number', columns['v_z']);
 
 	
 	// Power Columns
 	powerData.addColumn('number', columns['timepoint']);
-	powerData.addColumn('number', columns['pwr_rms']);
+	powerData.addColumn('number', columns['pwr_x']);
+	powerData.addColumn('number', columns['pwr_y']);
+	powerData.addColumn('number', columns['pwr_z']);
 	
+	// Get index of each value
+	var timeIndex = columns.indexOf('timepoint');
+	var velXindex = columns.indexOf('v_x');
+	var velYindex = columns.indexOf('v_y');
+	var velZindex = columns.indexOf('v_z');
+	var pwrXindex = columns.indexOf('pwr_x');
+	var pwrYindex = columns.indexOf('pwr_y');
+	var pwrZindex = columns.indexOf('pwr_z');
+
 	// Add values to rows
 	for (var key in coords) {
-		var time = coords[key][3];
-		var velocity = coords[key][4];
-		var power = coords[key][2];
-		velocityData.addRow([time, velocity]);
-		powerData.addRow([time, power]);
+		var time = coords[key][timeIndex];
+		var vel_x = coords[key][velXindex];
+		var vel_y = coords[key][velYindex];
+		var vel_z = coords[key][velZindex];
+		var pwr_x = coords[key][pwrXindex];
+		var pwr_y = coords[key][pwrYindex];
+		var pwr_z = coords[key][pwrZindex];
+		velocityData.addRow([time, vel_x, vel_y, vel_z]);
+		powerData.addRow([time, pwr_x, pwr_y, pwr_z]);
 	}
 	
 	// Velocity chart options
@@ -173,7 +194,13 @@ $(document).ready(function() {
 	  explorer: { zoomDelta: 1.1 },
 	  series: {
 		  0: {
-			  labelInLegend: 'Velocity'
+			  labelInLegend: 'Velocity X'
+		  },
+		  1: {
+			  labelInLegend: 'Velocity Y'
+		  },
+		  2: {
+			  labelInLegend: 'Velocity Z'
 		  }
 	  }
 	};
@@ -188,7 +215,13 @@ $(document).ready(function() {
 	  explorer: { zoomDelta: 1.1 },
 	  series: {
 		  0: {
-			  labelInLegend: 'Power'
+			  labelInLegend: 'Power X',
+		  },
+		  1: {
+			  labelInLegend: 'Power Y',
+		  },
+		  2: {
+			  labelInLegend: 'Power Z',
 		  }
 	  }
 	};

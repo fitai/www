@@ -3,7 +3,7 @@ $title = "Switch";
 include("/var/www/html/header.php");
 ?>
 <h1><?php echo $title; ?></h1>
-<div id="athlete-switch">
+<div id="athlete-switch" class="flexbox athlete-switch">
 	<?php
 	$query = $myPDO->prepare("
 		SELECT * 
@@ -22,6 +22,7 @@ include("/var/www/html/header.php");
 	?>
 		<div class="athlete">
 			<a href="switch.php?id=<?php echo $row['user_id']; ?>">
+				<img src="/images/blank-person.png" width="200" height="200"><br>
 				<?php echo $row['athlete_first_name']." ".$row['athlete_last_name']; ?>
 			</a>
 		</div>

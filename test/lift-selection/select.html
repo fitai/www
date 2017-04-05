@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- jQuery UI -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<!-- Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Select 2 -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="text-center">
+				<h1>Option 1</h1>
+			</div>
+		</div>
+		<div class="row">
+			<form>
+				<div class="col-sm-4 form-group">
+					<label for="equipment">Equipment</label>
+					<select id="opt1-equipment" name="equipment" class="form-control">
+					</select>
+				</div>
+				<div class="col-sm-4 form-group">
+					<label for="exercise-type">Excercise Type</label>
+					<select id="opt1-exercise-type" name="exercise-type" class="form-control">
+					</select>
+				</div>
+				<div class="col-sm-4 form-group">
+					<label for="exercise-variation">Excercise Variation</label>
+					<select id="opt1-exercise-variation" name="exercise-variation" class="form-control">
+					</select>
+				</div>
+			</form>
+		</div>
+		<div class="row" style="margin-top: 80px;">
+			<div class="text-center">
+				<h1>Option 2</h1>
+			</div>
+		</div>
+		<div class="row">
+			<form>
+				<div class="col-sm-8 col-sm-offset-2 form-group">
+					<label for="opt2-exercise">Exercise</label>
+					<select id="opt2-exercise" name="opt2-exercise" class="form-control">
+					</select>
+				</div>
+			</form>
+		</div>
+		<div id="opt2"></div>
+		<div id="opt21"></div>
+	</div>
+	
+<script>
+var equipment = [{id: ''}, {id: 'barbell', text: 'Barbell'}, {id: 'dumbbell', text: 'Dumbbell'},];
+var exerciseType = [{id: ''}, {id: 'deadlift', text: 'Deadlift', equipment: ['barbell']}, { id: 'squat', text: 'Squat', equipment: ['barbell', 'dumbbell'] }, {id: 'curl', text: 'Curl', equipment: ['dumbbell']},];
+var exerciseVariation = [{id: ''}, {id: 'barbell-deadlift', text: 'Barbell Deadlift', type: ['deadlift']}, {id: 'barbell-squat', text: 'Barbell Squat', type: ['squat']}, {id: 'overhead-squat', text: 'Overhead Squat', type: ['squat']},];
+
+
+
+$('#opt1-equipment').select2({
+	data: equipment,
+	placeholder: 'Select Equipment'
+});
+$('#opt1-exercise-type').select2({
+	data: exerciseType,
+	placeholder: 'Select Exercise Type'
+});
+$('#opt1-exercise-variation').select2({
+	data: exerciseVariation,
+	placeholder: 'Select Exercise Variation'
+});
+
+// Opt2
+
+var opt21 = [ 
+	{
+		id: 0, 
+		text: 'Barbell',
+		children: [{
+			id: 100,
+			text: 'Deadlift',
+			children: [
+				{
+					id: 'barbell-deadlift',
+					text: 'Barbell Deadlift'
+				},
+			]
+		}]
+	},
+	{
+		id: 1, 
+		text: 'Dumbbell',
+		children: [{
+			id: 200,
+			text: 'Squat',
+			children: [
+				{
+					id: 'dumbbell-squat',
+					text: 'Dumbbell Squat'
+				},
+			]
+		}]
+	}
+];
+
+var opt22 = [ 
+	{
+		id: ''
+	},
+	{
+		id: 0, 
+		text: 'Barbell',
+		children: [{
+			id: 'deadlift',
+			text: 'Deadlift',
+		}]
+	},
+	{
+		id: 1, 
+		text: 'Dumbbell',
+		children: [{
+			id: 200,
+			text: 'Squat',
+			children: [
+				{
+					id: 'dumbbell-squat',
+					text: 'Dumbbell Squat',
+					value: 'test'
+				},
+			]
+		}]
+	}
+];
+
+var opt2 = [];
+
+// Create opt2 object
+$.each(equipment, function(i) {
+	var obj = {};
+	var objChild = [];
+	
+
+	// obj.id = i;
+	obj.text = equipment[i].text;
+	var equipID = equipment[i].id;
+
+	$.each(exerciseType, function(y) {
+		var objChildChild = [];
+		var equipType = exerciseType[y].equipment;
+
+		if ($.inArray(equipID, equipType) !== -1) {
+			var typeObj = {};
+			// typeObj.id = exerciseType[y].id,
+			typeObj.text = exerciseType[y].text
+
+			$.each(exerciseVariation, function(x) {
+				var variationType = exerciseVariation[x].type;
+
+				if ($.inArray(exerciseType[y].id, variationType) !== -1) {
+					var variationObj = {};
+					variationObj.id = exerciseVariation[x].id;
+					variationObj.text = exerciseVariation[x].text;
+					objChildChild.push(variationObj);
+				}
+			});
+
+			typeObj.children = objChildChild;
+			objChild.push(typeObj);
+		}
+	});
+	
+	obj.children = objChild;
+	//opt2.push(obj);
+	opt2.push(obj);
+});
+
+// $('#opt2').html('<pre>'+JSON.stringify(opt2)+'</pre>');
+// $('#opt21').html('<pre>'+JSON.stringify(opt21)+'</pre>');
+
+
+// Build select2 for Option 2
+$('#opt2-exercise').select2({
+	data: opt2,
+	placeholder: 'Select Exercise',
+});
+
+
+
+// update Exercise Type if equipment is changed
+function changeEquipment(exercise) {
+	var types = [{id: ''}];
+	$.each(exerciseType, function(i) {
+		if ($.inArray(exercise, exerciseType[i].equipment) !== -1) {
+			console.log(exerciseType[i].id + ' is a match');
+			types.push(exerciseType[i]);
+		}
+	});
+	$('#opt1-exercise-type').select2('destroy').trigger('change');
+	$('#opt1-exercise-type').html('');
+	$('#opt1-exercise-type').select2({ data: types, placeholder: 'Select Exercise Type' }).trigger('change');
+}
+
+// update Exercise Variation if Type is changed
+function changeExerciseType(type) {
+	var variation = [{id: ''}];
+	$.each(exerciseVariation, function(i) {
+		if ($.inArray(type, exerciseVariation[i].type) !== -1) {
+			console.log(exerciseVariation[i].id + ' is a match');
+			variation.push(exerciseVariation[i]);
+		}
+	});
+	$('#opt1-exercise-variation').select2('destroy').trigger('change');
+	$('#opt1-exercise-variation').html('');
+	$('#opt1-exercise-variation').select2({ data: variation, placeholder: 'Select Exercise Variation' }).trigger('change');
+}
+
+
+// Watch for changes on Equipment selection in Option 1
+$('#opt1-equipment').on('select2:select', function() {
+	var equipment = $(this).val();
+	changeEquipment(equipment);
+});
+
+// Watch for changes on Type selection in Option 1
+$('#opt1-exercise-type').on('select2:select', function() {
+	var type = $(this).val();
+	console.log(type + ' selected');
+	changeExerciseType(type);
+});
+
+// Watch for changes on Option 2
+$('#opt2-exercise').on('select2:select', function() {
+	var type = $(this).val();
+	console.log(type + ' selected');
+});
+</script>
+
+</body>
+</html>
