@@ -31,6 +31,9 @@ require("/var/www/html/auth.php");
 <div id="body-content" class="body-<?php echo strtolower($title); ?>" >
 	<nav id="nav-menu">
 		<div class="container">
+			<div id="close-menu" class="close-menu">
+				<i class="dripicons-menu"></i>
+			</div>
 			<div class="nav-items">
 				<div>
 					<a href="/">
@@ -74,5 +77,8 @@ require("/var/www/html/auth.php");
 	<div id="main">
 		<header>
 			<img id="logo" src="/images/fitai-logo-black.svg">
+			<div id="nav-hamburger" class="nav-hamburger hamburger-menu">
+				<i class="dripicons-menu"></i>
+			</div>
 		</header>
 		<div id="dynamic-content">

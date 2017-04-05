@@ -111,6 +111,21 @@ header {
 	margin-bottom: 20px;
 	padding: 5px 0;	
 	text-align: center;
+
+	.nav-hamburger {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		@include font-size(22px);
+
+		i:hover {
+			cursor: pointer;
+			color: $blue;
+		}
+	}
 }
 .hidden {
 	display: none;
@@ -133,6 +148,10 @@ header {
 	left: 0;
 	top: 0;
 	background: linear-gradient(to top, rgba(37,34,29,1), rgba(72,183,226,1));
+
+	.close-menu {
+		display: none;
+	}
 
 	.container {
 		min-height: calc(100vh - 60px);
@@ -271,6 +290,15 @@ label {
 	}
 	#nav-menu {
 		display: none;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    left: auto;
+	    z-index: 10000;
+
+	    close-menu {
+	    	display: block;
+	    }
 	}
 }
 @media (max-height:410px) {

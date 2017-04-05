@@ -63,6 +63,18 @@ header {
   margin-bottom: 20px;
   padding: 5px 0;
   text-align: center; }
+  header .nav-hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 22px;
+    font-size: 1.375rem; }
+    header .nav-hamburger i:hover {
+      cursor: pointer;
+      color: #00aeef; }
 
 .hidden {
   display: none; }
@@ -85,6 +97,8 @@ header {
   left: 0;
   top: 0;
   background: linear-gradient(to top, #25221d, #48b7e2); }
+  #nav-menu .close-menu {
+    display: none; }
   #nav-menu .container {
     min-height: calc(100vh - 60px);
     margin: 30px;
@@ -212,7 +226,14 @@ label {
     margin-left: 0; }
 
   #nav-menu {
-    display: none; } }
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: 10000; }
+    #nav-menu close-menu {
+      display: block; } }
 @media (max-height: 410px) {
   #nav-menu {
     position: absolute; } }
