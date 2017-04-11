@@ -32,7 +32,7 @@ require("/var/www/html/auth.php");
 	<nav id="nav-menu">
 		<div class="container">
 			<div id="close-menu" class="close-menu">
-				<i class="dripicons-menu"></i>
+				&times;
 			</div>
 			<div class="nav-items">
 				<div>

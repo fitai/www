@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"athlete",
+				"athlete_name"
+			],
+			[
 				"vel_y",
 				"vel_y"
 			],
@@ -67,6 +71,42 @@
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "athlete-switch/index.php",
+			"settings":
+			{
+				"buffer_size": 1437,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.scss",
+			"settings":
+			{
+				"buffer_size": 8776,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/global.js",
+			"settings":
+			{
+				"buffer_size": 449,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 2464,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
@@ -116,9 +156,9 @@
 		"/D/Backup/Websites/fitai",
 		"/D/Backup/Websites/fitai/admin",
 		"/D/Backup/Websites/fitai/admin/watch",
+		"/D/Backup/Websites/fitai/athlete-switch",
 		"/D/Backup/Websites/fitai/includes",
 		"/D/Backup/Websites/fitai/js",
-		"/D/Backup/Websites/fitai/MyApp",
 		"/D/Backup/Websites/fitai/MyApp/class",
 		"/D/Backup/Websites/fitai/MyApp/class/MyApp",
 		"/D/Backup/Websites/fitai/now",
@@ -128,6 +168,8 @@
 	],
 	"file_history":
 	[
+		"/D/Backup/Websites/fitai/athlete-switch/search.php",
+		"/D/Backup/Websites/fitai/athlete-switch/switch.php",
 		"/D/Backup/Websites/fitai/now/summary/index.php",
 		"/D/Backup/Websites/fitai/js/charts.js",
 		"/D/Backup/Websites/fitai/MyApp/index.php",
@@ -207,6 +249,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"close-menu",
+			"nav-menu",
+			"header",
+			"i:hover",
+			"transition",
+			"switch",
+			"i:hover",
+			"header",
+			"menu",
+			"nav-menu",
+			"wrap",
+			"flexbox",
 			"opt2",
 			"console.log",
 			"opt21",
@@ -246,7 +300,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -272,10 +326,131 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3023.0,
+						"translation.y": 1478.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "athlete-switch/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								953,
+								953
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2936,
+								2936
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2109.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/global.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								442,
+								442
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2464,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1394,
+								1394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -298,11 +473,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -330,6 +512,22 @@
 		"selected_items":
 		[
 			[
+				"header.php",
+				"header.php"
+			],
+			[
+				"heade",
+				"header.php"
+			],
+			[
+				"style.sc",
+				"css\\style.scss"
+			],
+			[
+				"switch",
+				"athlete-switch\\index.php"
+			],
+			[
 				"summary",
 				"now\\summary\\index.php"
 			],
@@ -350,10 +548,6 @@
 				"now\\index.php"
 			],
 			[
-				"style.sc",
-				"css\\style.scss"
-			],
-			[
 				"nowinde",
 				"now\\index.php"
 			],
@@ -368,10 +562,6 @@
 			[
 				"footer.",
 				"footer.php"
-			],
-			[
-				"header.php",
-				"header.php"
 			],
 			[
 				"welcome",

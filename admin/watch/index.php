@@ -37,6 +37,27 @@ include("/var/www/html/header.php");
 				<a href="<?php echo site_url(); ?>">Cancel</a>
 			</p>
 		</form>
+		<?php /*
+		<form id="lift-watch-by-ID" class="lift new">
+			<p>
+				<label>Collar ID: </label>
+				<select name="collarID" required>
+					<?php
+					$collars = get_team_collars();
+					foreach ($collars as $row) :
+					?>
+						<option value="<?php echo $row['collar_id']; ?>"><?php echo $row['collar_id']; ?></option>
+					<?php endforeach; ?>
+				</select>
+			</p>
+			<input name="userID" type="hidden" value=<?php echo $_SESSION['userID']; ?>>
+			<p>
+				<button id="lift-watch-by-ID-submit">Submit</button><br>
+				<a href="<?php echo site_url(); ?>">Cancel</a>
+			</p>
+		</form>
+		*/
+		?>
 	</div>
 </div>
 <div id="connect_string"></div>
@@ -59,6 +80,7 @@ include("/var/www/html/header.php");
 </div>
 <h1><?php echo $title; ?></h1>
 <div id="athleteID" style="display: none;"></div>
+<div id="watchSelector" style="display: none;" data-val="athlete"></div>
 <div id="currently-watching">
 	<p>
 	Currently Watching: <span id="current-athlete-name">None</span>
@@ -87,18 +109,33 @@ conn.onopen = function(e) {
 };
 
 conn.onmessage = function(e) {
+	var watchSelector = $('#watchSelector').attr('data-val');
 	athleteID = $('#athleteID').text();
 	var values = JSON.parse(e.data);
-	if (values.athleteID == athleteID) {
-		console.log(e.data);
-		connectDiv.innerHTML=e.data;
-		updateGauge(values.velocity);
-		updateColumn(values.power);
-		updateReps(values.repCount);
-		updateActive(values.active);
-		updateCollarID(values.collarID);
-		updateLiftType(values.liftType);
-		updateLiftWeight(values.liftWeight);
+	if (watchSelector == 'collar') {
+		if (values.collarID == athleteID) {
+			console.log(e.data);
+			connectDiv.innerHTML=e.data;
+			updateGauge(values.velocity);
+			updateColumn(values.power);
+			updateReps(values.repCount);
+			updateActive(values.active);
+			updateCollarID(values.collarID);
+			updateLiftType(values.liftType);
+			updateLiftWeight(values.liftWeight);
+		}
+	} else {
+		if (values.athleteID == athleteID) {
+			console.log(e.data);
+			connectDiv.innerHTML=e.data;
+			updateGauge(values.velocity);
+			updateColumn(values.power);
+			updateReps(values.repCount);
+			updateActive(values.active);
+			updateCollarID(values.collarID);
+			updateLiftType(values.liftType);
+			updateLiftWeight(values.liftWeight);
+		}
 	}
 };
 connectDiv.innerHTML="\nDone!";

@@ -6,7 +6,6 @@ google.charts.setOnLoadCallback(drawLine);
 //Declare Global Variables
 var data, options, chart, dataColumn, optionsColumn, chartColumn, chartContainerWidth, velocityChart, velocityOptions, velocityData;
 
-
 //Gauge
 var majorValues = [];
 for (var i = 0; i <= 10; i++) {
@@ -251,11 +250,24 @@ $( document ).ready(function() {
 		e.preventDefault();
 		var validate = $('form#lift-watch').valid();
 		if (validate == true) {
+			$('#watchSelector').attr('data-val', 'athlete');
 			var watchID = $('select[name=athleteID]').val();
 			var athleteName = $('select[name=athleteID]').find(':selected').data('athlete-name');
 			$('#athleteID').text(watchID);
 			$('#current-athlete-name').text(athleteName);
 			console.log('Now watching athleteID:' + watchID + '(' + athleteName + ')');
+			$('#overlay').hide();
+		}
+	});
+	$("#lift-watch-by-ID-submit").click(function(e) {
+		e.preventDefault();
+		var validate = $('form#lift-watch-by-ID').valid();
+		if (validate == true) {
+			$('#watchSelector').attr('data-val', 'collar');
+			var watchID = $('select[name=collarID]').val();
+			$('#athleteID').text(watchID);
+			$('#current-athlete-name').text('Collar ' + watchID);
+			console.log('Now watching collarID:' + watchID);
 			$('#overlay').hide();
 		}
 	});

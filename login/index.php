@@ -10,7 +10,7 @@ $error = false;
         $password = $_POST['password'];
 		$username = stripslashes($username);
 		$password = md5(stripslashes($password));
-	//Checking is user existing in the database or not
+	// Checking if user exiss in the database or not
         $query = $myPDO->prepare("SELECT id FROM users WHERE username=:username and password=:password");
 		$query->bindParam(':username', $username, PDO::PARAM_STR);
 		$query->bindParam(':password', $password, PDO::PARAM_STR);
@@ -24,7 +24,13 @@ $error = false;
 			$_SESSION['username'] = $username; 
 			$fetch = $query->fetch(PDO::FETCH_OBJ);
 			$_SESSION['userID'] = $fetch->id;
-			header("Location: /"); // Redirect user to home
+			if (isset($_SESSION['redirect'])) :
+				$redirect = $_SESSION['redirect'];
+				unset($_SESSION['redirect']);
+				header("Location: ".$redirect); // Redirect user to previous page
+			else:
+				header("Location: /"); // Redirect user to home
+			endif;
 		} else {
 			$error = true;
 		}

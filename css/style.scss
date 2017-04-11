@@ -111,6 +111,7 @@ header {
 	margin-bottom: 20px;
 	padding: 5px 0;	
 	text-align: center;
+	position: relative;
 
 	.nav-hamburger {
 		position: absolute;
@@ -121,9 +122,13 @@ header {
 		height: 100%;
 		@include font-size(22px);
 
-		i:hover {
+		i {
+			@include transition(all 0.3s);
 			cursor: pointer;
-			color: $blue;
+
+			&:hover {
+				color: $blue;			
+			}
 		}
 	}
 }
@@ -141,16 +146,33 @@ header {
 	padding: 0 20px;
 }
 #nav-menu {
-	width: calc(20% - 60px);
-	min-width: 200px;
-	min-height: 100vh;
-	position: fixed;
-	left: 0;
-	top: 0;
+	display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: 10000;
 	background: linear-gradient(to top, rgba(37,34,29,1), rgba(72,183,226,1));
 
 	.close-menu {
-		display: none;
+		display: block;
+		background-color: $white;
+		@include font-size(40px);
+		cursor: pointer;
+		@include transition(all 0.3s);
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		border-radius: 100%;
+		width: 30px;
+		height: 30px;
+		line-height: 25px;
+		text-align: center;
+
+		&:hover {
+			color: #d4d4d4;
+		}
+
 	}
 
 	.container {
@@ -223,6 +245,32 @@ header {
 	}
 }
 
+@media (min-width: 601px) {
+	header .nav-hamburger {
+		display: none;
+	}
+	#nav-menu {
+		display: block;
+		width: calc(20% - 60px);
+		min-width: 200px;
+		min-height: 100vh;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: auto;
+
+		.close-menu {
+			display: none;
+		}
+	}
+}
+
+@media (max-height:410px) {
+	#nav-menu {
+		position: absolute;
+	}
+}
+
 /* Forms */
 input {
 	width: 230px;
@@ -288,24 +336,8 @@ label {
 	#main {
 		margin-left: 0;
 	}
-	#nav-menu {
-		display: none;
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    left: auto;
-	    z-index: 10000;
+}
 
-	    close-menu {
-	    	display: block;
-	    }
-	}
-}
-@media (max-height:410px) {
-	#nav-menu {
-		position: absolute;
-	}
-}
 
 /*****************
 * Login
